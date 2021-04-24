@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>STANCE</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#2e2e2e">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preload" href="fonts/subset-Inter-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-Inter-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-Inter-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/subset-Inter-Bold.woff2" as="font" crossorigin="anonymous">
+
+  <style>#preloader{align-items:center;bottom:0;background-color:#fff;display:flex;flex-direction:column;justify-content:center;left:0;opacity:1;position:fixed;right:0;top:0;transition:opacity0.3s;z-index:999999;}#preloader p{color:#313943;font-family:sans-serif;font-size:14px;margin-top:25px;}.loaded #preloader{opacity:0}</style>
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+  <div id="preloader">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.4 59.1" width="60" height="59">
+    	<g>
+    		<path fill="#141414" d="M30.2,59.1c16.7,0,30.2-13.2,30.2-29.6C60.4,13.2,46.9,0,30.2,0C13.5,0,0,13.2,0,29.6C0,45.9,13.5,59.1,30.2,59.1z"/>
+    		<path fill="#ffffff" d="M40.4,38.7l8.4-8.4c0.1-0.1,0.2-0.2,0.3-0.4s0.1-0.3,0.1-0.4s0-0.3-0.1-0.4s-0.1-0.3-0.3-0.4l-8.4-8.4l8.2-8.2c0.2-0.2,0.3-0.5,0.3-0.8s-0.1-0.6-0.3-0.8c-0.2-0.2-0.5-0.3-0.8-0.3s-0.6,0.1-0.8,0.3l-8.1,8.2l-8.4-8.4c-0.1-0.1-0.2-0.2-0.4-0.2c-0.1-0.1-0.3-0.1-0.4-0.1c-0.2,0-0.3,0-0.4,0.1c-0.1,0.1-0.3,0.1-0.4,0.2l-8.4,8.4l-8.2-8.2c-0.2-0.2-0.5-0.3-0.8-0.3c-0.3,0-0.6,0.1-0.8,0.3c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8l8.2,8.2l-8.4,8.4c-0.1,0.1-0.2,0.2-0.2,0.4c-0.1,0.1-0.1,0.3-0.1,0.4s0,0.3,0.1,0.4c0.1,0.1,0.1,0.3,0.2,0.4l8.4,8.4l-8.2,8.2c-0.2,0.2-0.3,0.5-0.3,0.8c0,0.3,0.1,0.6,0.3,0.8c0.2,0.2,0.5,0.3,0.8,0.3c0.3,0,0.6-0.1,0.8-0.3l8.2-8.2l8.4,8.4c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0.1,0.3,0.1,0.4,0.1s0.3,0,0.4-0.1c0.1-0.1,0.3-0.1,0.4-0.2l8.4-8.4l8.2,8.2c0.1,0.1,0.2,0.2,0.4,0.2c0.1,0.1,0.3,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1c0.1-0.1,0.3-0.1,0.4-0.2c0.1-0.1,0.2-0.2,0.2-0.4c0.1-0.1,0.1-0.3,0.1-0.4c0-0.1,0-0.3-0.1-0.4c-0.1-0.1-0.1-0.3-0.2-0.4L40.4,38.7z M46.3,29.6l-7.6,7.6l-7.6-7.6l7.6-7.6L46.3,29.6z M29.6,12.8l7.6,7.6L29.6,28L22,20.4L29.6,12.8z M12.8,29.6l7.6-7.6l7.6,7.6l-7.6,7.6L12.8,29.6z M29.6,46.3L22,38.7l7.6-7.6l7.6,7.6L29.6,46.3z"/>
+    	</g>
+    </svg>
+    <p>Загрузка...</p>
+  </div>
+
+  <svg aria-hidden="true" style="width: 0px; height: 0px; overflow: hidden; position: absolute;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="burger" viewBox="0 0 16 16">
+      <g>
+    		<rect y="2" width="16" height="2"/>
+    		<rect y="7" width="16" height="2"/>
+    		<rect y="12" width="16" height="2"/>
+    	</g>
+    </symbol>
+    <symbol id="close" viewBox="0 0 16 16">
+      <g>
+    		<rect x="-2.1" y="6.7" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.3137 8)" width="20.1" height="2.5"/>
+    		<rect x="6.7" y="-2.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -3.3137 8)" width="2.5" height="20.1"/>
+    	</g>
+    </symbol>
+    <symbol id="cart" viewBox="0 0 16 16">
+      <path d="M15.3,2.7H4L3.8,1.4C3.7,1.1,3.4,0.9,3.1,0.9H0.3C0.1,0.9,0,1,0,1.2v0.7c0,0.2,0.1,0.3,0.3,0.3h2.2l1.9,9.9C4.2,12.4,4,12.9,4,13.3c0,1,0.8,1.8,1.8,1.8c1,0,1.8-0.8,1.8-1.8c0-0.3-0.1-0.6-0.3-0.9h4c-0.1,0.3-0.2,0.6-0.2,0.9c0,1,0.8,1.8,1.8,1.8c1,0,1.8-0.8,1.8-1.8c0-0.5-0.2-0.9-0.6-1.3l0-0.1c0.1-0.4-0.2-0.8-0.7-0.8H5.6L5.4,9.8h8.7c0.3,0,0.6-0.2,0.7-0.5L16,3.5C16.1,3.1,15.8,2.7,15.3,2.7z M5.8,14c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C6.5,13.7,6.1,14,5.8,14z M12.9,14c-0.4,0-0.7-0.3-0.7-0.7c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C13.6,13.7,13.3,14,12.9,14z M13.5,8.4H5.1L4.3,4h10.3L13.5,8.4z"/>
+    </symbol>
+    <symbol id="favorite" viewBox="0 0 16 16">
+      <path d="M14.3,2C12.5,0.5,9.7,0.7,8,2.5C6.3,0.7,3.5,0.5,1.7,2c-2.3,2-2,5.2-0.3,6.9l5.5,5.6C7.1,14.8,7.5,15,8,15c0.4,0,0.8-0.2,1.2-0.5l5.5-5.6C16.3,7.2,16.7,4,14.3,2z M13.6,7.9l-5.5,5.6c-0.1,0.1-0.1,0.1-0.2,0L2.4,7.9C1.3,6.7,1,4.5,2.6,3.2c1.2-1,3.1-0.9,4.3,0.3L8,4.6l1.1-1.1c1.2-1.2,3-1.3,4.3-0.3C15,4.5,14.7,6.7,13.6,7.9z"/>
+    </symbol>
+    <symbol id="search" viewBox="0 0 16 16">
+      <path d="M15.8,13.8l-3.1-3.1c-0.1-0.1-0.3-0.2-0.5-0.2h-0.5C12.5,9.4,13,8,13,6.5C13,2.9,10.1,0,6.5,0C2.9,0,0,2.9,0,6.5S2.9,13,6.5,13c1.5,0,2.9-0.5,4-1.4v0.5c0,0.2,0.1,0.4,0.2,0.5l3.1,3.1c0.3,0.3,0.8,0.3,1.1,0l0.9-0.9C16.1,14.6,16.1,14.1,15.8,13.8z M6.5,10.5c-2.2,0-4-1.8-4-4c0-2.2,1.8-4,4-4c2.2,0,4,1.8,4,4C10.5,8.7,8.7,10.5,6.5,10.5z"/>
+    </symbol>
+    <symbol id="personal" viewBox="0 0 16 16">
+      <path d="M10.8,9.5C9.9,9.5,9.5,10,8,10c-1.5,0-1.9-0.5-2.8-0.5C2.9,9.5,1,11.4,1,13.7v0.8C1,15.3,1.7,16,2.5,16h11c0.8,0,1.5-0.7,1.5-1.5v-0.8C15,11.4,13.1,9.5,10.8,9.5z M13.5,14.5h-11v-0.8c0-1.5,1.2-2.7,2.7-2.7c0.5,0,1.2,0.5,2.8,0.5c1.6,0,2.3-0.5,2.8-0.5c1.5,0,2.7,1.2,2.7,2.7V14.5z M8,9c2.5,0,4.5-2,4.5-4.5C12.5,2,10.5,0,8,0C5.5,0,3.5,2,3.5,4.5C3.5,7,5.5,9,8,9z M8,1.5c1.6,0,3,1.4,3,3c0,1.7-1.4,3-3,3c-1.7,0-3-1.3-3-3C5,2.9,6.3,1.5,8,1.5z"/>
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="header__top container">
+      <ul class="service-menu">
+        <li class="service-menu__item"><a class="service-menu__link" href="#">О компании</a></li>
+        <li class="service-menu__item"><a class="service-menu__link" href="#">Клиентам</a></li>
+        <li class="service-menu__item"><a class="service-menu__link" href="#">Доставка и оплата</a></li>
+        <li class="service-menu__item"><a class="service-menu__link" href="#">Новости</a></li>
+        <li class="service-menu__item"><a class="service-menu__link" href="#">Акции</a></li>
+        <li class="service-menu__item"><a class="service-menu__link" href="#">Контакты</a></li>
+      </ul>
+      <div class="header__top-right">
+        <label class="header__currency">
+          <select>
+            <option value="ru">RUB</option>
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+          </select>
+        </label>
+        <div class="header__lang-block">
+          <a class="header__lang is-active" href="#">Ru</a>
+          <a class="header__lang" href="#">En</a>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="header__bottom-inner container">
+        <a class="header__logo" href="main.html"><img width="209" height="47" src="images/logo.svg" alt="STANCE"></a>
+        <div class="header__mobile-links">
+          <a class="header__cart" href="#" title="Коризна"><span class="header__cart-qnt-container"><svg><use xlink:href="#cart"></use></svg> <span class="header__cart-qnt">1</span></span></a>
+          <a class="header__favorite" href="#" title="Избранное"><svg><use xlink:href="#favorite"></use></svg></a>
+        </div>
+        <div class="header__menu-block">
+          <button class="js-menu-toggler header__menu-toggler" type="button"><svg><use xlink:href="#burger"></use></svg> <span>Каталог товаров</span></button>
+          <div class="header__menu-dropdown">
+            <div class="header__menu-dropdown-inner">
+              <nav class="menu-columns">
+                <div class="menu-columns__column">
+                  <ul class="menu">
+                    <li class="menu__title"><a href="#">Носки</a></li>
+                    <li class="menu__item"><a href="#"><b>Женские</b></a></li>
+                    <li class="menu__item"><a href="#"><b>Мужские</b></a></li>
+                    <li class="menu__item"><a href="#"><b>Детские</b></a></li>
+                    <li class="menu__item"><a href="#"><b>Унисекс</b></a></li>
+                    <li class="menu__item"><a href="#"><b>Новинки</b></a></li>
+                    <li class="menu__item"><a href="#"><b>Спорт</b></a></li>
+                    <li class="menu__item"><a href="#"><b>Коллекционные</b></a></li>
+                  </ul>
+                  <ul class="menu menu--no_desktop">
+                    <li class="menu__title"><span>Меню</span></li>
+                    <li class="menu__item"><a href="#">О компании</a></li>
+                    <li class="menu__item"><a href="#">Клиентам</a></li>
+                    <li class="menu__item"><a href="#">Доставка и оплата</a></li>
+                    <li class="menu__item"><a href="#">Новости</a></li>
+                    <li class="menu__item"><a href="#">Акции</a></li>
+                    <li class="menu__item"><a href="#">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="menu-column">
+                  <ul class="menu">
+                    <li class="menu__title"><a href="#">Наборы</a></li>
+                    <li class="menu__item"><a href="#">Спорт шик</a></li>
+                    <li class="menu__item"><a href="#">Весна 2021</a></li>
+                    <li class="menu__item"><a href="#">Весна 2021</a></li>
+                    <li class="menu__item"><a class="menu__link-all" href="#">Смотреть все</a></li>
+                  </ul>
+                  <ul class="menu">
+                    <li class="menu__title"><a href="#">Акции</a></li>
+                  </ul>
+                  <ul class="menu menu--no_desktop">
+                    <li class="menu__title"><span>Аккаунт</span></li>
+                    <li class="menu__item"><a href="#">Вход</a></li>
+                    <li class="menu__item"><a href="#">Корзина</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+  
+        <div class="header__search">
+          <form class="header__search-form" action="search.html">
+            <input class="header__search-input" name="q" type="text" value="" placeholder="Я ищу....">
+            <button class="header__search-submit" type="submit"><svg><use xlink:href="#search"></use></svg> <span>Найти</span></button>
+          </form>
+        </div>
+  
+        <div class="header__bottom-right">
+          <a class="header__cart" href="#" title="Коризна"><span class="header__cart-text">Корзина</span> <span class="header__cart-qnt-container"><svg><use xlink:href="#cart"></use></svg> <span class="header__cart-qnt">1</span></span></a>
+          <span class="header__bottom-right-separator"></span>
+          <a class="header__enter" href="#" title="Личный кабинет">Вход <svg><use xlink:href="#personal"></use></svg></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+        <li class="breadcrumbs__item">Текстовая страница</li>
+      </ul>
+
+      <h1>Заголовок типа h1</h1>
+      <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца.</p>
+      <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
+        художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
+        прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего,
+        создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
+        часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+      <h2>Заголовок типа h2</h2>
+      <p>Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
+        художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и,
+        прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего,
+        создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня
+        часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"</p>
+      <h3>Заголовок типа h3</h3>
+      <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее
+        всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни.</p>
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, at, rem. Sapiente perferendis rerum sequi, et ducimus saepe tenetur excepturi? Quo dolore, autem cupiditate maxime labore quisquam quis incidunt veniam.</li>
+        <li>маркированный список</li>
+        <li>маркированный список</li>
+      </ul>
+      <ol>
+        <li>нумерованный список</li>
+        <li>нумерованный список</li>
+        <li>нумерованный список</li>
+      </ol>
+      <form class="form" method="post" action="index.html">
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input" type="text" value=""/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input" type="text" value="Владимир"/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input" type="text" value="" disabled/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input" type="text" value="Владимир" disabled/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input error" type="text" value="Владимир"/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input error" type="text" value="" disabled/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="js-input-label input-label input-label--with_label">
+          <input class="input error" type="text" value="Владимир" disabled/>
+          <span class="input-label__text">Ваше имя</span>
+        </label>
+
+        <label class="input-label">
+          <input class="input" type="text" value="" placeholder="Обычный плейсхолдер"/>
+        </label>
+
+        <label class="input-label">
+          <input class="input" type="text" value="" disabled placeholder="Обычный плейсхолдер"/>
+        </label>
+
+        <label class="input-label">
+          <textarea class="textarea" placeholder="Ваше сообщение"></textarea>
+        </label>
+
+        <label class="input-label">
+          <textarea class="textarea" placeholder="Ваше сообщение" disabled></textarea>
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox"/>
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-text">Чекбокс</span>
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" checked/>
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-text">Чекбокс</span>
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" disabled/>
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-text">Чекбокс</span>
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" checked disabled/>
+          <span class="checkbox-icon"></span>
+          <span class="checkbox-text">Чекбокс</span>
+        </label>
+
+        <label class="radio-label">
+          <input id="radio1" type="radio" name="radio" value="1" checked/>
+          <span class="radio-icon"></span>
+          <span class="radio-text">Радио</span>
+        </label>
+
+        <label class="radio-label">
+          <input id="radio2" type="radio" name="radio" value="2"/>
+          <span class="radio-icon"></span>
+          <span class="radio-text">Радио</span>
+        </label>
+
+        <label class="radio-label">
+          <input id="radio2" type="radio" name="radio" value="3" disabled/>
+          <span class="radio-icon"></span>
+          <span class="radio-text">Радио</span>
+        </label>
+
+        <p>
+          <a class="button disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
+          <button class="button" type="button">Нет я кнопка!</button>
+          <input class="button" type="button" value="Акститесь!">
+        </p>
+
+        <p>
+          <a class="button button--big disabled" href="javascript:void(0)" tabindex="-1">Я кнопка!</a>
+          <button class="button button--big" type="button">Нет я кнопка!</button>
+          <input class="button button--big" type="button" value="Акститесь!">
+        </p>
+
+        <label class="select">
+          <select>
+            <option value="1">Вариант 1</option>
+            <option value="2">Вариант 2</option>
+            <option value="3">Вариант 3</option>
+          </select>
+        </label>
+      </form>
+      <br>
+      <div class="responsive-table">
+        <table>
+          <tr>
+            <th>Заголовок таблицы</th>
+            <th>Заголовок таблицы</th>
+            <th>Заголовок таблицы</th>
+          </tr>
+          <tr>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+          </tr>
+          <tr>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+          </tr>
+          <tr>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+            <td>ячейка таблицы</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__left">
+          <div class="footer__logo"><img width="267" height="60" src="images/logo.svg" alt="STANCE"></div>
+          <p class="footer__note">Надежный и долгосрочный партнер<br> в рамках развития на территории России</p>
+        </div>
+        <div class="footer__center">
+          <nav class="menu-columns">
+            <div class="menu-columns__column">
+              <ul class="menu">
+                <li class="menu__title"><a href="#">Носки</a></li>
+                <li class="menu__item"><a href="#"><b>Женские</b></a></li>
+                <li class="menu__item"><a href="#"><b>Мужские</b></a></li>
+                <li class="menu__item"><a href="#"><b>Детские</b></a></li>
+                <li class="menu__item"><a href="#"><b>Унисекс</b></a></li>
+                <li class="menu__item"><a href="#"><b>Новинки</b></a></li>
+                <li class="menu__item"><a href="#"><b>Спорт</b></a></li>
+                <li class="menu__item"><a href="#"><b>Коллекционные</b></a></li>
+              </ul>
+              <ul class="menu menu--no_desktop">
+                <li class="menu__title"><span>Меню</span></li>
+                <li class="menu__item"><a href="#">О компании</a></li>
+                <li class="menu__item"><a href="#">Клиентам</a></li>
+                <li class="menu__item"><a href="#">Доставка и оплата</a></li>
+                <li class="menu__item"><a href="#">Новости</a></li>
+                <li class="menu__item"><a href="#">Акции</a></li>
+                <li class="menu__item"><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="menu-column">
+              <ul class="menu">
+                <li class="menu__title"><a href="#">Наборы</a></li>
+                <li class="menu__item"><a href="#">Спорт шик</a></li>
+                <li class="menu__item"><a href="#">Весна 2021</a></li>
+                <li class="menu__item"><a href="#">Весна 2021</a></li>
+                <li class="menu__item"><a class="menu__link-all" href="#">Смотреть все</a></li>
+              </ul>
+              <ul class="menu">
+                <li class="menu__title"><a href="#">Акции</a></li>
+              </ul>
+              <ul class="menu menu--no_desktop">
+                <li class="menu__title"><span>Аккаунт</span></li>
+                <li class="menu__item"><a href="#">Вход</a></li>
+                <li class="menu__item"><a href="#">Корзина</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right-column">
+            <p class="footer__title">Инфо</p>
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Информация о доставке</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Связаться с нами</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Процесс возврата</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">FAQs</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Информация о товаре</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="#">Подарочные карты и купоны</a></li>
+            </ul>
+          </div>
+          <div class="footer__right-column">
+            <p class="footer__title">Способы оплаты</p>
+            <p class="footer__payments">
+              <img src="images/icons/mastercard.svg" alt="MasterCard">
+              <img src="images/icons/visa.svg" alt="Visa">
+              <img src="images/icons/mir.svg" alt="Мир">
+            </p>
+            <p class="footer__note">Вы можете оплатить покупки<br> наличными при получении, либо<br> выбрать другой способ оплаты.</p>
+          </div>
+          <div class="footer__right-column">
+            <p class="footer__title">Контакты</p>
+            <ul class="footer__menu">
+              <li class="footer__menu-item"><a class="footer__menu-link" href="mailto:info@stance.ru">info@stance.ru</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link" href="tel:+79219685454">+7(921)968-54-54</a></li>
+              <li class="footer__menu-item footer__menu-link">Пн-Пт: 9.00 - 20.00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="footer__copyrights">© 2021, Stance Russia</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.inputmask.min.js"></script>
+  <script src="js/inputmask-init.js"></script>
+  <script src="js/select2.full.min.js"></script>
+  <script src="js/select2-addon.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/inputs_labels.js"></script>
+  <script src="js/preloader.js"></script>
+</body>
+
+</html>

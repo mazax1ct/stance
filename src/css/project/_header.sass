@@ -1,0 +1,578 @@
+.header
+  background-color: #fff
+  box-shadow: 0 10px 20px 0 rgba(#000, 0.05)
+  height: 112px
+  left: 0
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 10
+
+  @media(min-width: 768px)
+    height: 104px
+
+  &__top
+    align-items: center
+    display: none
+    justify-content: space-between
+
+    @media(min-width: 768px)
+      display: flex
+
+  &__top-right
+    align-items: center
+    display: flex
+
+  &__lang-block
+    border-left: 1px solid $text_color
+    display: flex
+    margin-left: 20px
+    padding-left: 24px
+
+  &__lang
+    border: 1px solid transparent
+    color: $grey_color
+    display: block
+    font-size: 14px
+    line-height: 16px
+    padding: 2px 6px 4px
+    text-decoration: none
+
+    &:not(:last-child)
+      margin-right: 4px
+
+    &.is-active
+      border-color: $color_blue
+      color: $text_color
+
+  &__currency
+    display: block
+    height: 24px
+    position: relative
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L4 4L7 1' stroke='%232E2E2E'/%3E%3C/svg%3E%0A")
+      background-color: transparent
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      content: ''
+      height: 3px
+      left: auto
+      position: absolute
+      right: 2px
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 6px
+
+    select
+      display: block
+      appearance: none
+      outline: 0
+      box-shadow: none
+      border: none
+      border-radius: 0
+      background-image: none
+      font-size: 14px
+      font-weight: 500
+      width: 100%
+      height: 100%
+      margin: 0
+      padding: 0 16px 0 0
+      cursor: pointer
+
+      &::-ms-expand
+        display: none
+
+  &__bottom
+    background-color: $lightgrey_color
+
+  &__bottom-inner
+    align-items: center
+    display: flex
+    flex-wrap: wrap
+
+    @media(min-width: 768px)
+      height: 72px
+      padding-top: 12px
+      padding-bottom: 13px
+
+  &__logo
+    margin-top: 7px
+    margin-bottom: 8px
+    min-width: 150px
+    width: 150px
+
+    @media(min-width: 375px)
+      min-width: 174px
+      width: 174px
+
+    @media(min-width: 768px)
+      margin-right: 16px
+      margin-top: 0
+      margin-bottom: 0
+
+    @media(min-width: 1024px)
+      margin-right: 32px
+      min-width: 209px
+      width: 209px
+
+  &__mobile-links
+    display: flex
+    margin-left: auto
+    margin-right: 8px
+
+    @media(min-width: 768px)
+      display: none
+
+  &__cart
+    align-items: center
+    display: flex
+    height: 40px
+    justify-content: center
+    line-height: 24px
+    text-decoration: none
+    width: 40px
+
+    @media(min-width: 768px)
+      width: auto
+
+    svg
+      fill: #555
+      height: 18px
+      width: 18px
+
+      @media(min-width: 768px)
+        fill: $text_color
+
+  &__cart-qnt-container
+    align-items: center
+    display: flex
+    height: 24px
+    position: relative
+
+  &__cart-qnt
+    align-items: center
+    background-color: $color_blue
+    border-radius: 50%
+    color: #fff
+    display: flex
+    font-size: 10px
+    height: 12px
+    justify-content: center
+    left: auto
+    line-height: 12px
+    position: absolute
+    right: -4px
+    top: 0
+    width: 12px
+
+  &__cart-text
+    font-size: 14px
+    font-weight: 500
+    margin-right: 16px
+
+  &__favorite
+    align-items: center
+    display: flex
+    height: 40px
+    justify-content: center
+    position: relative
+    width: 40px
+
+    svg
+      fill: #555
+      height: 18px
+      width: 18px
+
+  &__menu-block
+    @media(min-width: 768px)
+      margin-right: 16px
+      position: relative
+
+    @media(min-width: 1024px)
+      margin-right: 32px
+
+  &__menu-toggler
+    align-items: center
+    background-color: $color_blue
+    border: 1px solid $color_blue
+    color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 16px
+    height: 40px
+    justify-content: center
+    line-height: 24px
+    padding: 0
+    width: 40px
+
+    &.is-active
+      background-color: #fff
+
+      @media(min-width: 768px)
+        background-color: $color_blue
+
+      svg
+        fill: $color_blue
+        height: 16px
+        width: 16px
+
+        @media(min-width: 768px)
+          fill: #fff
+
+    @media(min-width: 1200px)
+      padding-left: 20px
+      padding-right: 20px
+      width: auto
+
+    svg
+      fill: #fff
+      height: 20px
+      width: 20px
+
+      @media(min-width: 1200px)
+        height: 16px
+        margin-right: 20px
+        width: 16px
+
+    span
+      display: none
+
+      @media(min-width: 1200px)
+        display: block
+
+  &__menu-dropdown
+    background-color: #fff
+    display: none
+    height: calc(100% - 56px)
+    left: 0
+    position: fixed
+    padding-top: 8px
+    padding-left: 15px
+    padding-right: 15px
+    top: 55px
+    width: 100%
+    z-index: 10
+
+    @media(min-width: 768px)
+      border: 1px solid #F6F6F6
+      filter: drop-shadow(2px 10px 20px rgba(#000, 0.05))
+      height: auto
+      overflow: visible
+      position: absolute
+      padding: 42px 54px
+      top: 76px
+      width: 500px
+
+    &::after,
+    &::before
+      @media(min-width: 768px)
+      	bottom: 100%
+      	left: 10px
+      	border: solid transparent
+      	content: ''
+      	height: 0
+      	width: 0
+      	position: absolute
+      	pointer-events: none
+
+    &::after
+      @media(min-width: 768px)
+      	border-color: rgba(255, 255, 255, 0)
+      	border-bottom-color: #fff
+      	border-width: 10px
+
+    &::before
+      @media(min-width: 768px)
+      	border-color: rgba(248, 249, 250, 0)
+      	border-bottom-color: #F6F6F6
+      	border-width: 11px
+
+    &.is-open
+      display: block
+
+  &__menu-dropdown-inner
+    border-top: 1px solid $grey_color
+    height: 100%
+    overflow-y: auto
+    overflow-x: hidden
+    padding-top: 24px
+
+    @media(min-width: 768px)
+      border: none
+      height: auto
+      overflow: visible
+      padding: 0
+
+  &__search
+    background-color: #fff
+    flex-grow: 1
+    margin-left: -15px
+    margin-right: -15px
+    min-width: 100%
+    padding-top: 8px
+    padding-bottom: 8px
+    padding-left: 15px
+    padding-right: 15px
+    width: 100%
+
+    @media(min-width: 768px)
+      flex-grow: 0
+      min-width: 0
+      margin-left: 0
+      margin-right: 0
+      padding: 0
+      max-width: 448px
+      width: auto
+
+    @media(min-width: 1900px)
+      flex-grow: 1
+
+  &__search-form
+    position: relative
+
+    @media(min-width: 768px)
+      display: flex
+
+  &__search-input
+    background-color: #fff
+    border: 1px solid $grey_color
+    border-radius: 0
+    color: $text_color
+    font-size: 14px
+    font-weight: 400
+    height: 40px
+    line-height: 24px
+    padding: 8px 50px 8px 16px
+    transition: border-color 0.3s, padding 0.3s
+    width: 100%
+
+    @media(min-width: 768px)
+      border-color: #fff
+      padding-right: 16px
+
+    &:focus
+      border-color: $color_blue
+
+    &::-webkit-input-placeholder
+      color: $grey_color
+      opacity: 1
+
+    &::-moz-placeholder
+      color: $grey_color
+      opacity: 1
+
+    &:-ms-input-placeholder
+      color: $grey_color
+      opacity: 1
+
+  &__search-submit
+    align-items: center
+    background-color: $color_red
+    border: none
+    color: #fff
+    cursor: pointer
+    display: flex
+    font-size: 16px
+    font-weight: 500
+    height: 34px
+    justify-content: center
+    line-height: 24px
+    left: auto
+    position: absolute
+    right: 3px
+    padding: 0
+    top: 3px
+    transition: background-color 0.3s
+    width: 34px
+
+    @media(min-width: 1024px)
+      height: 40px
+      left: auto
+      min-width: 120px
+      position: static
+      right: auto
+      top: auto
+      width: 120px
+
+    &:hover,
+    &:focus
+      background-color: $color_blue
+      color: #fff
+
+    &:active
+      box-shadow: inset 0 4px 4px 0 rgba(#000, 0.15)
+
+    span
+      display: none
+
+      @media(min-width: 1024px)
+        display: block
+
+    svg
+      fill: #fff
+      height: 16px
+      width: 16px
+
+      @media(min-width: 1024px)
+        display: none
+
+  &__bottom-right
+    align-items: center
+    display: none
+    margin-left: auto
+
+    @media(min-width: 768px)
+      display: flex
+
+  &__bottom-right-separator
+    background-color: $text_color
+    height: 32px
+    margin-right: 26px
+    margin-left: 26px
+    width: 1px
+
+  &__enter
+    align-items: center
+    display: flex
+    font-size: 14px
+    font-weight: 500
+    height: 40px
+    justify-content: center
+    line-height: 24px
+    text-decoration: none
+
+    svg
+      fill: $text_color
+      height: 18px
+      margin-left: 12px
+      width: 18px
+
+.service-menu
+  display: flex
+  font-size: 14px
+  list-style: none
+  line-height: 32px
+  margin: 0 !important
+  padding: 0
+
+  @media(min-width: 768px) and (max-width: 1023px)
+    font-size: 12px
+
+  &__item
+    &:not(:last-child)
+      margin-right: 16px
+
+      @media(min-width: 1200px)
+        margin-right: 24px
+
+  &__link
+    align-items: center
+    display: flex
+    text-decoration: none
+
+.menu-columns
+  display: flex
+  margin-left: -15px
+  margin-right: -15px
+  padding-bottom: 32px
+
+  @media(min-width: 768px)
+    padding-bottom: 0
+
+  &__column
+    padding-left: 15px
+    padding-right: 15px
+    width: 50%
+
+.menu
+  list-style: none
+  font-size: 12px
+  line-height: 16px
+  margin-bottom: 0 !important
+  padding: 0
+
+  &:not(:first-child)
+    margin-top: 16px
+
+  &--no_desktop
+    @media(min-width: 768px)
+      display: none
+
+  a
+    display: inline-block
+    padding-top: 4px
+    padding-bottom: 4px
+    text-decoration: none
+    vertical-align: top
+
+    &:hover,
+    &:focus
+      b
+        padding-left: 12px
+
+    b
+      font-size: 14px
+      font-weight: 600
+      line-height: 24px
+      transition: padding-left 0.3s
+
+  .menu__link-all
+    text-decoration: underline
+
+  &__title
+    font-size: 16px
+    font-weight: 600
+    line-height: 24px
+    margin-bottom: 12px
+
+    a
+      display: block
+      position: relative
+      padding-bottom: 8px
+
+      &::after
+        border-bottom: 1px solid $grey_color
+        content: ''
+        display: block
+        left: 0
+        position: absolute
+        top: 100%
+        transition: border-color 0.3s
+        width: 100px
+
+      &:hover,
+      &:focus,
+      &:active
+        color: $text_color
+
+      &:hover,
+      &:focus
+        &::after
+          border-bottom-color: $color_blue
+
+      &:active
+        &::after
+          border-bottom-color: $color_red
+
+    span
+      display: block
+      padding-bottom: 8px
+      position: relative
+
+      &::after
+        border-bottom: 1px solid $grey_color
+        content: ''
+        display: block
+        left: 0
+        position: absolute
+        top: 100%
+        transition: border-color 0.3s
+        width: 100px
+
+  &__link-all
+    color: $color_blue
+
+    &:hover,
+    &:focus
+      color: $color_red
