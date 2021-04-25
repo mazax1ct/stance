@@ -44,28 +44,33 @@
   position: relative
   padding-bottom: 16px
   text-decoration: none
+  z-index: 1
 
   &:hover
-    filter: drop-shadow(0 0 20px rgba(#000, 0.15))
-    z-index: 1
+    @media(min-width: 768px)
+      filter: drop-shadow(0 0 20px rgba(#000, 0.15))
+      z-index: 2
 
     &::after
-      background-color: #fff
-      bottom: 0
-      content: ''
-      left: -16px
-      position: absolute
-      padding: 16px
-      right: -16px
-      top: -16px
-      z-index: -1
+      @media(min-width: 768px)
+        background-color: #fff
+        bottom: 0
+        content: ''
+        left: -16px
+        position: absolute
+        padding: 16px
+        right: -16px
+        top: -16px
+        z-index: -1
 
     .catalog-item__image-toggler
       &::before
-        display: block
+        @media(min-width: 768px)
+          display: block
 
     .catalog-item__form
-      display: block
+      @media(min-width: 768px)
+        display: block
 
   &__image-block
     position: relative
