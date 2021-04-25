@@ -1,0 +1,63 @@
+.banner
+  &:not(:last-child)
+    margin-bottom: 56px
+
+    @media(min-width: 1900px)
+      margin-bottom: 96px
+
+  &__link,
+  &__picture,
+  &__image,
+  &__content-container
+    display: block
+    width: 100%
+
+  &__link
+    color: #fff
+    overflow: hidden
+    position: relative
+    text-decoration: none
+
+    &:hover,
+    &:focus,
+    &:active
+      color: #fff
+
+      .banner__image
+        transform: scale(1.02)
+
+  &__image
+    transform: scale(1)
+    transition: transform 0.3s
+
+  &__content-container
+    left: 0
+    position: absolute
+    padding: 32px 20px
+    top: 0
+    z-index: 1
+
+    @media(min-width: 1024px)
+      padding-left: 32px
+      padding-right: 32px
+
+    @media(min-width: 1024px)
+      padding-left: 56px
+      padding-right: 56px
+
+    @media(min-width: 1900px)
+      padding: 96px 120px
+
+    h1
+      font-size: 18px
+      line-height: 1.33333
+
+      @media(min-width: 768px)
+        font-size: 26px
+
+      @media(min-width: 1024px)
+        font-size: 32px
+
+      @media(min-width: 1900px)
+        font-size: 48px
+        line-height: 1.16666

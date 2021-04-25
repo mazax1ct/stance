@@ -1,0 +1,101 @@
+.news-list
+  position: relative
+
+  @media(min-width: 600px)
+    display: flex
+    flex-wrap: wrap
+    margin-left: -10px
+    margin-right: -10px
+
+  @media(min-width: 1024px)
+    margin-left: -16px
+    margin-right: -16px
+
+  &__item
+    margin-bottom: 24px
+
+    @media(min-width: 600px)
+      padding-left: 10px
+      padding-right: 10px
+      width: 50%
+
+    @media(min-width: 1024px)
+      margin-bottom: 48px
+      padding-left: 16px
+      padding-right: 16px
+      width: 33.33333%
+
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      @media(min-width: 1024px)
+        margin-bottom: 0
+
+  .slick-arrow
+    top: 86px
+
+    @media(min-width: 1900px)
+      top: 144px
+
+  .slick-prev
+    left: -10px
+
+    @media(min-width: 600px)
+      left: 0
+
+    @media(min-width: 1900px)
+      left: -8px
+
+  .slick-next
+    right: -10px
+
+    @media(min-width: 600px)
+      right: 0
+
+    @media(min-width: 1900px)
+      right: -8px
+
+.news-item
+  display: block
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    color: $text_color
+
+    .news-item__image
+      transform: scale(1.02)
+
+  &__picture,
+  &__image,
+  &__date,
+  &__title
+    display: block
+
+  &__picture,
+  &__image
+    width: 100%
+
+  &__picture,
+    margin-bottom: 8px
+    overflow: hidden
+
+  &__image
+    transform: scale(1)
+    transition: transform 0.3s
+
+  &__date
+    color: $color_blue
+    font-size: 14px
+    font-weight: 600
+    margin-bottom: 8px
+    line-height: 24px
+
+  &__title
+    font-size: 16px
+    font-weight: 500
+    line-height: 24px
+
+    @media(min-width: 1900px)
+      font-size: 18px
+      font-weight: 600
+      line-height: 24px

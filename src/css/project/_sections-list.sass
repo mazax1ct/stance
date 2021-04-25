@@ -1,0 +1,132 @@
+.sections-list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -10px
+  margin-right: -10px
+
+  @media(min-width: 1024px)
+    margin-left: -16px
+    margin-right: -16px
+
+  &__item
+    margin-bottom: 24px
+    padding-left: 10px
+    padding-right: 10px
+    width: 50%
+
+    @media(min-width: 600px)
+      width: 33.33333%
+
+    @media(min-width: 768px)
+      width: 25%
+
+    @media(min-width: 1024px)
+      margin-bottom: 40px
+      padding-left: 16px
+      padding-right: 16px
+
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      margin-bottom: 0
+
+    &:nth-last-child(3)
+      @media(min-width: 600px)
+        margin-bottom: 0
+
+    &:nth-last-child(4)
+      @media(min-width: 1024px)
+        margin-bottom: 0
+
+.section-item
+  display: block
+  filter: drop-shadow(2px 4px 20px rgba(#000, 0.03))
+  margin-left: auto
+  margin-right: auto
+  max-width: 155px
+  text-decoration: none
+  text-align: center
+
+  @media(min-width: 1024px)
+    max-width: 328px
+
+  &:hover,
+  &:focus
+    img
+      transform: scale(1.02)
+
+    .section-item__link-text
+      color: $color_red
+
+      svg
+        fill: $color_red
+
+  &__image,
+  &__title
+    display: block
+
+  &__image
+    background-color: $lightgrey_color
+    overflow: hidden
+
+    img
+      mix-blend-mode: multiply
+      transform: scale(1)
+      transition: transform 0.3s
+
+  &__title
+    background-color: $text_color
+    border-radius: 0 0 10px 0
+    color: #fff
+    font-size: 13px
+    font-weight: 600
+    line-height: 16px
+    padding: 8px
+
+    @media(min-width: 1024px)
+      font-size: 18px
+      line-height: 24px
+      padding: 12px
+
+    @media(min-width: 1900px)
+      font-size: 22px
+      line-height: 32px
+      padding: 16px
+
+  &__link-text
+    align-items: center
+    color: $color_blue
+    display: flex
+    font-size: 12px
+    font-weight: 600
+    justify-content: center
+    line-height: 16px
+    padding: 8px
+    transition: color 0.3s
+
+    @media(min-width: 1024px)
+      font-size: 14px
+
+    @media(min-width: 1900px)
+      font-size: 16px
+      padding: 16px
+
+    span
+      align-items: center
+      display: flex
+      height: 8px
+      justify-content: flex-end
+      overflow: hidden
+      margin-top: 1px
+      margin-right: 10px
+      text-align: right
+      width: 25px
+
+      @media(min-width: 1024px)
+        width: 41px
+
+    svg
+      fill: $color_blue
+      height: 8px
+      min-width: 41px
+      transition: fill 0.3s
+      width: 41px

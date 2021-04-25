@@ -1,0 +1,265 @@
+.catalog-list
+  display: flex
+  flex-wrap: wrap
+  margin-left: -10px
+  margin-right: -10px
+
+  @media(min-width: 1024px)
+    margin-left: -8px
+    margin-right: -8px
+
+  &__item
+    margin-bottom: 24px
+    padding-left: 10px
+    padding-right: 10px
+    width: 50%
+
+    @media(min-width: 600px)
+      width: 33.33333%
+
+    @media(min-width: 1024px)
+      padding-left: 8px
+      padding-right: 8px
+      width: 25%
+
+    @media(min-width: 1200px)
+      width: 20%
+
+    &:nth-last-child(1),
+    &:nth-last-child(2)
+      margin-bottom: 0
+
+    &:nth-last-child(3),
+    &:nth-last-child(4)
+      @media(min-width: 1024px)
+        margin-bottom: 0
+
+    &:nth-last-child(5)
+      @media(min-width: 1200px)
+        margin-bottom: 0
+
+.catalog-item
+  background-color: #fff
+  display: block
+  position: relative
+  padding-bottom: 16px
+  text-decoration: none
+
+  &:hover
+    filter: drop-shadow(0 0 20px rgba(#000, 0.15))
+    z-index: 1
+
+    &::after
+      background-color: #fff
+      bottom: 0
+      content: ''
+      left: -16px
+      position: absolute
+      padding: 16px
+      right: -16px
+      top: -16px
+      z-index: -1
+
+    .catalog-item__image-toggler
+      &::before
+        display: block
+
+    .catalog-item__form
+      display: block
+
+  &__image-block
+    position: relative
+    margin-bottom: 8px
+
+  &__image
+    display: block
+
+  &__image-togglers
+    display: flex
+    height: 100%
+    left: 0
+    position: absolute
+    padding-left: 4px
+    padding-right: 4px
+    top: 0
+    width: 100%
+    z-index: 2
+
+    &--2
+      .catalog-item__image-toggler
+        width: 50%
+
+    &--3
+      .catalog-item__image-toggler
+        width: 33.33333%
+
+    &--4
+      .catalog-item__image-toggler
+        width: 25%
+
+  &__image-toggler
+    padding-left: 2px
+    padding-right: 2px
+    padding-top: 6px
+
+    &.is-active
+      &::before
+        background-color: $grey_color
+
+    &::before
+      background-color: #fff
+      display: none
+      content: ''
+      height: 4px
+      width: 100%
+
+  &__tag
+    background-color: $color_blue
+    color: #fff
+    font-size: 12px
+    font-weight: 500
+    line-height: 16px
+    left: 0
+    padding: 4px 5px
+    position: absolute
+    top: 24px
+    text-transform: uppercase
+    z-index: 1
+
+  &__fav
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: flex
+    filter: drop-shadow(0 0 4px rgba(#000, 0.36))
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 0
+    top: 16px
+    width: 40px
+    z-index: 3
+
+    svg
+      fill: #fff
+      height: 16px
+      width: 16px
+
+  &__price
+    font-size: 16px
+    font-weight: 600
+    margin-bottom: 4px
+
+  &__title
+    font-size: 12px
+    line-height: 16px
+    margin-bottom: 0
+
+  &__form
+    background-color: #fff
+    bottom: 0
+    display: none
+    height: auto
+    left: -16px
+    position: absolute
+    top: 100%
+    width: calc(100% + 32px)
+    z-index: 2
+
+  &__form-inner
+    background-color: #fff
+    padding-left: 16px
+    padding-right: 16px
+    padding-top: 8px
+    padding-bottom: 16px
+
+  &__buy-block
+    display: flex
+    margin-bottom: 24px
+
+  &__buy-button
+    border-radius: 0
+    flex-grow: 1
+    margin-left: -1px
+
+  &__sizes
+    display: flex
+    flex-wrap: wrap
+    margin-left: -8px
+    margin-right: -8px
+    margin-bottom: 8px
+
+  &__size
+    display: block
+    margin-bottom: 8px
+    padding-left: 8px
+    padding-right: 8px
+    text-align: center
+
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + .catalog-item__size-letter
+        border-color: $color_blue
+
+      &:disabled + .catalog-item__size-letter,
+      &:disabled ~ .catalog-item__size-decimals,
+        color: $grey_color
+        cursor: default
+
+  &__size-letter
+    border: 1px solid $lightgrey_color
+    cursor: pointer
+    display: block
+    font-size: 14px
+    font-weight: 500
+    line-height: 16px
+    margin-bottom: 8px
+    padding: 8px 4px
+    text-transform: uppercase
+    width: 40px
+
+  &__size-decimals
+    cursor: pointer
+    display: block
+    font-size: 10px
+    font-weight: 500
+    line-height: 16px
+
+  &__colors
+    display: flex
+    flex-wrap: wrap
+    margin-left: -8px
+    margin-right: -8px
+
+  &__color
+    display: block
+    margin-bottom: 8px
+    padding-left: 8px
+    padding-right: 8px
+
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + .catalog-item__color-image
+        border-color: $color_blue
+
+  &__color-image
+    border: 1px solid $lightgrey_color
+    cursor: pointer
+    display: block
+    padding: 4px
+
+    img
+      display: block
