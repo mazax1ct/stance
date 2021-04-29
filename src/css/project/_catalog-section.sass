@@ -1,0 +1,278 @@
+.catalog
+  @media(min-width: 768px)
+    display: flex
+    margin-left: -8px
+    margin-right: -8px
+
+  &__filter-block
+    @media(min-width: 768px)
+      max-width: 270px
+      min-width: 270px
+      padding-left: 8px
+      padding-right: 8px
+      width: 33.33333%
+
+  &__filter-opener
+    align-items: center
+    background-color: $lightgrey_color
+    border: none
+    cursor: pointer
+    display: flex
+    font-size: 14px
+    height: 48px
+    justify-content: space-between
+    line-height: 24px
+    padding: 8px 16px
+    width: 100%
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='%233081EB' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Crect y='7' width='16' height='2'/%3E%3Crect x='9' width='16' height='2' transform='rotate(90 9 0)'/%3E%3C/g%3E%3C/svg%3E%0A")
+      content: ''
+      display: block
+      height: 16px
+      width: 16px
+
+    @media(min-width: 768px)
+      display: none
+
+  &__filter-closer
+    align-items: center
+    background-color: #fff
+    border: 1px solid $color_blue
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    left: auto
+    padding: 0
+    position: absolute
+    right: 16px
+    top: 16px
+    width: 40px
+    z-index: 2
+
+    @media(min-width: 768px)
+      display: none
+
+    svg
+      fill: $color_blue
+      height: 16px
+      width: 16px
+
+  &__filter
+    background-color: #fff
+    bottom: 0
+    display: none
+    left: 0
+    position: fixed
+    right: 0
+    top: 0
+    z-index: 11
+
+    @media(min-width: 768px)
+      border: 1px solid #F6F6F6
+      bottom: auto
+      display: block
+      left: auto
+      position: static
+      padding-left: 16px
+      padding-right: 16px
+      right: auto
+      top: auto
+
+    @media(min-width: 1024px)
+      padding-left: 24px
+      padding-right: 24px
+
+    &.is-open
+      display: block
+
+  &__filter-inner
+    height: 100%
+    overflow-y: auto
+    padding-left: 16px
+    padding-right: 16px
+
+    @media(min-width: 768px)
+      padding-left: 0
+      padding-right: 0
+
+  &__filter-section
+    border-bottom: 1px solid #F6F6F6
+    padding-bottom: 32px
+    padding-top: 24px
+
+  &__filter-section-inner
+    display: none
+    padding-top: 16px
+
+    &.is-active
+      display: block
+
+  &__filter-title
+    cursor: pointer
+    font-size: 14px
+    font-weight: 500
+    margin-bottom: 0
+    position: relative
+    padding-right: 16px
+
+    &.is-active
+      &::after
+        transform: translateY(-50%) rotate(180deg)
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 9 9' width='9' height='9'%3E%3Cpath d='M4,7.1c0.3,0.2,0.7,0.2,0.9,0l3.7-3.7c0.3-0.3,0.3-0.7,0-0.9L8.1,1.9c-0.3-0.2-0.7-0.2-0.9,0L4.5,4.5L1.9,1.9c-0.2-0.2-0.7-0.2-0.9,0L0.3,2.5c-0.2,0.2-0.2,0.7,0,0.9L4,7.1z'/%3E%3C/svg%3E%0A")
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      content: ''
+      height: 9px
+      left: auto
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translateY(-50%)
+      width: 9px
+      z-index: 1
+
+  &__filter-menu
+    font-size: 14px
+    font-weight: 500
+
+    li
+      &:not(:last-child)
+        margin-bottom: 5px
+
+    a
+      text-decoration: none
+
+      &.is-active
+        color: $color_blue
+
+  &__filter-buttons
+    padding-top: 32px
+    padding-bottom: 16px
+
+    @media(min-width: 768px)
+      padding-bottom: 0
+
+  &__filter-apply
+    background-color: $color_blue
+    border: none
+    color: #fff
+    cursor: pointer
+    font-size: 14px
+    height: 40px
+    padding: 8px 16px
+    transition: background-color 0.3s
+    width: 100%
+
+    &:hover,
+    &:focus
+      background-color: $color_red
+
+  &__filter-reset
+    align-items: center
+    background-color: transparent
+    border: none
+    color: $darkgrey_color
+    cursor: pointer
+    display: flex
+    font-size: 14px
+    height: 40px
+    justify-content: center
+    padding: 8px 16px
+    transition: color 0.3s
+    width: 100%
+
+    &:hover,
+    &:focus
+      color: $text_color
+
+      svg
+        fill: $text_color
+
+    svg
+      fill: $darkgrey_color
+      height: 11px
+      margin-left: 6px
+      margin-top: 2px
+      transition: fill 0.3s
+      width: 11px
+
+  &__list
+    @media(min-width: 768px)
+      flex-grow: 1
+      padding-left: 8px
+      padding-right: 8px
+      width: 66.66666%
+
+    .catalog-list
+      @media(min-width: 768px)
+        margin-left: -8px
+        margin-right: -8px
+
+    .catalog-list__item
+      @media(min-width: 768px)
+        padding-left: 8px
+        padding-right: 8px
+        width: 50%
+
+      @media(min-width: 1024px)
+        width: 33.33333%
+
+      @media(min-width: 1200px)
+        width: 25%
+
+  &__sorting-block
+    align-items: center
+    display: flex
+    font-size: 14px
+    font-weight: 500
+    justify-content: flex-end
+
+  &__sorting-title
+    display: none
+    margin-bottom: 0
+    margin-right: 16px
+
+    @media(min-width: 768px)
+      display: block
+
+  &__sorting
+    display: block
+    height: 48px
+    position: relative
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='16' viewBox='0 0 8 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0L7.4641 6H0.535898L4 0Z' fill='%232E2E2E'/%3E%3Cpath d='M4 16L0.535899 10L7.4641 10L4 16Z' fill='%232E2E2E'/%3E%3C/svg%3E%0A")
+      background-color: transparent
+      background-position: 50% 50%
+      background-repeat: no-repeat
+      content: ''
+      height: 16px
+      left: auto
+      position: absolute
+      right: 2px
+      top: 50%
+      transform: translate(-50%, -50%)
+      width: 8px
+
+    select
+      display: block
+      appearance: none
+      outline: 0
+      box-shadow: none
+      border: none
+      border-radius: 0
+      background-image: none
+      font-size: 14px
+      font-weight: 500
+      width: 100%
+      height: 100%
+      margin: 0
+      padding: 0 24px 0 0
+      cursor: pointer
+
+      &::-ms-expand
+        display: none

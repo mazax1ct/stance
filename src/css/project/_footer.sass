@@ -1,7 +1,11 @@
 .footer
+  background-color: $lightgrey_color
   flex-shrink: 0
   padding-top: 25px
   padding-bottom: 25px
+
+  @media(min-width: 1024px)
+    padding-top: 50px
 
   &__top
     margin-bottom: 60px
@@ -127,7 +131,7 @@
         margin-right: 24px
 
   &__copyrights
-    border-top: 1px solid $grey_color
+    border-top: 1px solid #F0F0F0
     font-size: 14px
     line-height: 24px
     margin-bottom: 0

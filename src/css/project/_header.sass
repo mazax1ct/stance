@@ -1,15 +1,19 @@
 .header
   background-color: #fff
-  box-shadow: 0 10px 20px 0 rgba(#000, 0.05)
+  box-shadow: none
   height: 112px
   left: 0
   position: fixed
   right: 0
   top: 0
+  transition: box-shadow 0.3s
   z-index: 10
 
   @media(min-width: 768px)
     height: 104px
+
+  &.scrolled
+    box-shadow: 0 10px 20px 0 rgba(#000, 0.05)
 
   &__top
     align-items: center

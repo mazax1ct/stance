@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>STANCE - Поиск - ничего не найдено</title>
+  <title>STANCE - Личный кабинет - учётная запись</title>
 
   <meta name="description" content="">
 
@@ -188,13 +188,42 @@
     <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
-        <li class="breadcrumbs__item">Поиск</li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="personal.html">Личный кабинет</a></li>
+        <li class="breadcrumbs__item">Учётная запись</li>
       </ul>
 
       <section class="page-section">
-        <h1>Результаты поиска по запросу:</h1>
-        <p class="search-phrase">Мужские носки</p>
-        <p>К сожалениею по вашему запросу ничего не найдено. Попробуйте ещё раз.</p>
+        <h1>Учётная запись</h1>
+        <ul class="tabs">
+          <li class="tabs__item"><a class="tabs__link" href="personal-data.html">История заказов</a></li>
+          <li class="tabs__item"><span class="tabs__link  is-active">Учётная запись</span></li>
+        </ul>
+
+        <form class="auth-form" action="">
+          <label class="input-label">
+            <span class="input-label__text">Имя</span>
+            <input class="input" type="text" value=""/>
+          </label>
+
+          <label class="input-label">
+            <span class="input-label__text">Email</span>
+            <input class="input" type="text" value=""/>
+          </label>
+
+          <label class="input-label">
+            <span class="input-label__text">Новый пароль</span>
+            <input class="input" type="password" value=""/>
+          </label>
+
+          <p class="auth-form__note">Используйте комбинацию из букв, чисел и символов. Минимальное количество знаков: 8</p>
+
+          <label class="input-label">
+            <span class="input-label__text">Подтвердить новый пароль</span>
+            <input class="input" type="password" value=""/>
+          </label>
+
+          <button class="button button--middle" type="submit">Сохранить</button>
+        </form>
       </section>
     </div>
   </main>
@@ -309,6 +338,7 @@
   <script src="js/preloader.js"></script>
 
   <script src="js/catalog-list.js"></script>
+  <script src="js/catalog-section.js"></script>
 </body>
 
 </html>

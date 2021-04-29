@@ -1,0 +1,32 @@
+.tabs
+  display: flex
+  font-size: 16px
+  font-weight: 500
+  line-height: 1.5
+  margin-bottom: 56px
+  overflow-x: auto
+
+  @media(min-width: 1900px)
+    font-size: 22px
+    margin-bottom: 72px
+
+  &__item
+    &:not(:last-child)
+      margin-right: 24px
+
+      @media(min-width: 1900px)
+        margin-right: 32px
+
+  &__link
+    border-bottom: 2px solid transparent
+    color: $grey_color
+    display: block
+    padding: 8px
+    text-decoration: none
+
+    @media(min-width: 1900px)
+      padding: 16px 12px
+
+    &.is-active
+      border-bottom-color: $color_blue
+      color: $text_color

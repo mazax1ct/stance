@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>STANCE - Личный кабинет - учётная запись</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="personal.html">Личный кабинет</a></li>
+        <li class="breadcrumbs__item">Учётная запись</li>
+      </ul>
+
+      <section class="page-section">
+        <h1>Учётная запись</h1>
+        <ul class="tabs">
+          <li class="tabs__item"><a class="tabs__link" href="personal-data.html">История заказов</a></li>
+          <li class="tabs__item"><span class="tabs__link  is-active">Учётная запись</span></li>
+        </ul>
+
+        <form class="auth-form" action="">
+          <label class="input-label">
+            <span class="input-label__text">Имя</span>
+            <input class="input" type="text" value=""/>
+          </label>
+
+          <label class="input-label">
+            <span class="input-label__text">Email</span>
+            <input class="input" type="text" value=""/>
+          </label>
+
+          <label class="input-label">
+            <span class="input-label__text">Новый пароль</span>
+            <input class="input" type="password" value=""/>
+          </label>
+
+          <p class="auth-form__note">Используйте комбинацию из букв, чисел и символов. Минимальное количество знаков: 8</p>
+
+          <label class="input-label">
+            <span class="input-label__text">Подтвердить новый пароль</span>
+            <input class="input" type="password" value=""/>
+          </label>
+
+          <button class="button button--middle" type="submit">Сохранить</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/cart-add.html
+
+  //= template/scripts.html
+
+  <script src="js/catalog-list.js"></script>
+  <script src="js/catalog-section.js"></script>
+</body>
+
+</html>

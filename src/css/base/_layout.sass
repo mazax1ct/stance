@@ -2,7 +2,6 @@ html
   box-sizing: border-box
   font-family: sans-serif
   height: 100%
-  overflow-x: hidden
 
 *,
 *::after,
@@ -22,7 +21,7 @@ body
     overflow: hidden
 
     @media(min-width: 768px)
-      overflow: auto
+      overflow-y: auto
 
 .page-content
   flex: 1 0 auto
@@ -54,6 +53,10 @@ body
 
   &--grey
     background-color: $lightgrey_color
+    margin-left: -16px
+    margin-right: -16px
+    padding-left: 16px
+    padding-right: 16px
     padding-top: 56px
     padding-bottom: 56px
     position: relative
@@ -61,6 +64,15 @@ body
     @media(min-width: 1900px)
       padding-top: 96px
       padding-bottom: 96px
+
+    //&:last-child
+      margin-bottom: -32px
+
+      //@media(min-width: 1350px)
+        margin-bottom: -64px
+
+      //@media(min-width: 1900px)
+        margin-bottom: -96px
 
     &::after
       background-color: $lightgrey_color
@@ -70,8 +82,11 @@ body
       position: absolute
       top: 0
       transform: translateX(-50%)
-      width: 4000px
+      width: 100%
       z-index: -1
+
+      @media(min-width: 1170px)
+        width: 4000px
 
 .two-columns
   margin-bottom: 16px

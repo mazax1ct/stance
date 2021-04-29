@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <title>STANCE - Раздел каталога</title>
+
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  //= template/favicon.html
+
+  //= template/fonts-preload.html
+
+  //= template/preloader-styles.html
+
+  //= template/style.html
+</head>
+
+<body>
+  //= template/preloader.html
+
+  //= template/sprite.html
+
+  //= template/header.html
+
+  <main class="page-content">
+    <div class="container">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+        <li class="breadcrumbs__item">Раздел каталога</li>
+      </ul>
+
+      <section class="page-section">
+        <h1>Раздел каталога</h1>
+        <div class="catalog">
+          <div class="catalog__filter-block">
+            <button class="js-filter-opener catalog__filter-opener">Фильтр по параметрам</button>
+            <div class="catalog__filter">
+              <button class="js-filter-closer catalog__filter-closer" type="button" title="Закрыть фильтр"><svg><use xlink:href="#close"></use></svg></button>
+              <div class="catalog__filter-inner">
+                <div class="catalog__filter-section">
+                  <ul class="catalog__filter-menu">
+                    <li><a class="is-active" href="#">Мужские</a></li>
+                    <li><a href="#">Женские</a></li>
+                    <li><a href="#">Унисекс</a></li>
+                    <li><a href="#">Спорт</a></li>
+                  </ul>
+                </div>
+                <div class="catalog__filter-section">
+                  <p class="js-catalog-section-toggler catalog__filter-title is-active">Размер Eu</p>
+                  <div class="catalog__filter-section-inner is-active">
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">S (36-38)</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">M</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">L</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">XL</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">XXL</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog__filter-section">
+                  <p class="js-catalog-section-toggler catalog__filter-title is-active">Цена, <span class="color-blue">₽</span></p>
+                  <div class="catalog__filter-section-inner is-active">
+                    
+                  </div>
+                </div>
+                <div class="catalog__filter-section">
+                  <p class="js-catalog-section-toggler catalog__filter-title is-active">Высота носка</p>
+                  <div class="catalog__filter-section-inner is-active">
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Низкая</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Средняя</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Высокая</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Гольфы</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Чулки</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog__filter-section">
+                  <p class="js-catalog-section-toggler catalog__filter-title is-active">Цвет</p>
+                  <div class="catalog__filter-section-inner is-active">
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Синий</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Черный</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Разноцветный</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Белый</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">Красный</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog__filter-section">
+                  <p class="js-catalog-section-toggler catalog__filter-title is-active">Толщина</p>
+                  <div class="catalog__filter-section-inner is-active">
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">до 4 мм</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">до 8 мм</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">до 12 мм</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">до 20 мм</span>
+                    </label>
+                    <label class="checkbox-label">
+                      <input type="checkbox"/>
+                      <span class="checkbox-icon"></span>
+                      <span class="checkbox-text">до 40 мм</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="catalog__filter-buttons">
+                  <button class="catalog__filter-apply" type="submit">Показать 1000 товаров</button>
+                  <button class="catalog__filter-reset" type="reset">Сбросить <svg><use xlink:href="#close"></use></svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__list">
+            <div class="catalog__sorting-block">
+              <p class="catalog__sorting-title">Сортировать:</p>
+              <label class="catalog__sorting">
+                <select>
+                  <option>По цене, сначала дешевле</option>
+                  <option>По цене, сначала дороже</option>
+                </select>
+              </label>
+            </div>
+            <ul class="catalog-list">
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                      <div class="catalog-item__image-togglers">
+                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-section/img_1.jpg" data-srcset="images/content/catalog-section/img_1@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_2.jpg" data-srcset="images/content/catalog-section/img_2@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_3.jpg" data-srcset="images/content/catalog-section/img_3@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_4.jpg" data-srcset="images/content/catalog-section/img_4@2x.jpg 2x"></div>
+                      </div>
+                    </a>
+                    <span class="catalog-item__tag">NEW</span>
+                    <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorite"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="30-34" disabled>
+                          <span class="catalog-item__size-letter">xs</span>
+                          <span class="catalog-item__size-decimals">30-34</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37" disabled>
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="47-50">
+                          <span class="catalog-item__size-letter">xl</span>
+                          <span class="catalog-item__size-decimals">47-50</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="51-54">
+                          <span class="catalog-item__size-letter">xxl</span>
+                          <span class="catalog-item__size-decimals">51-54</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="55-60">
+                          <span class="catalog-item__size-letter">yl</span>
+                          <span class="catalog-item__size-decimals">55-60</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                      <div class="catalog-item__image-togglers">
+                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-section/img_1.jpg" data-srcset="images/content/catalog-section/img_1@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_2.jpg" data-srcset="images/content/catalog-section/img_2@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_3.jpg" data-srcset="images/content/catalog-section/img_3@2x.jpg 2x"></div>
+                      </div>
+                    </a>
+                    <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorite_full"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция в две строки для проверки</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37">
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                      <div class="catalog-item__image-togglers">
+                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-section/img_1.jpg" data-srcset="images/content/catalog-section/img_1@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_2.jpg" data-srcset="images/content/catalog-section/img_2@2x.jpg 2x"></div>
+                      </div>
+                    </a>
+                    <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorite_full"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция в две строки для проверки</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37">
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                    </a>
+                    <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorite_full"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция в две строки для проверки</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37">
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                    </a>
+                    <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorite_full"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция в две строки для проверки</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">Перейти в корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37">
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                      <div class="catalog-item__image-togglers">
+                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-section/img_1.jpg" data-srcset="images/content/catalog-section/img_1@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_2.jpg" data-srcset="images/content/catalog-section/img_2@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_3.jpg" data-srcset="images/content/catalog-section/img_3@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_4.jpg" data-srcset="images/content/catalog-section/img_4@2x.jpg 2x"></div>
+                      </div>
+                    </a>
+                    <span class="catalog-item__tag">NEW</span>
+                    <button class="catalog-item__fav" type="button" title="Добавить в избранное"><svg><use xlink:href="#favorite"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="30-34" disabled>
+                          <span class="catalog-item__size-letter">xs</span>
+                          <span class="catalog-item__size-decimals">30-34</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37" disabled>
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="47-50">
+                          <span class="catalog-item__size-letter">xl</span>
+                          <span class="catalog-item__size-decimals">47-50</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="51-54">
+                          <span class="catalog-item__size-letter">xxl</span>
+                          <span class="catalog-item__size-decimals">51-54</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="55-60">
+                          <span class="catalog-item__size-letter">yl</span>
+                          <span class="catalog-item__size-decimals">55-60</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный1">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                      <div class="catalog-item__image-togglers">
+                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-section/img_1.jpg" data-srcset="images/content/catalog-section/img_1@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_2.jpg" data-srcset="images/content/catalog-section/img_2@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_3.jpg" data-srcset="images/content/catalog-section/img_3@2x.jpg 2x"></div>
+                      </div>
+                    </a>
+                    <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorite_full"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция в две строки для проверки</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37">
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="catalog-list__item">
+                <div class="catalog-item">
+                  <div class="catalog-item__image-block">
+                    <a class="catalog-item__image" href="#">
+                      <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                      <div class="catalog-item__image-togglers">
+                        <div class="catalog-item__image-toggler is-active" data-src="images/content/catalog-section/img_1.jpg" data-srcset="images/content/catalog-section/img_1@2x.jpg 2x"></div>
+                        <div class="catalog-item__image-toggler" data-src="images/content/catalog-section/img_2.jpg" data-srcset="images/content/catalog-section/img_2@2x.jpg 2x"></div>
+                      </div>
+                    </a>
+                    <button class="catalog-item__fav" type="button" title="Убрать из избранного"><svg><use xlink:href="#favorite_full"></use></svg></button>
+                  </div>
+                  <p class="catalog-item__price">14 000 ₽</p>
+                  <p class="catalog-item__title">Название, категория товара и коллекция в две строки для проверки</p>
+                  <div class="catalog-item__form">
+                    <div class="catalog-item__form-inner">
+                      <div class="catalog-item__buy-block">
+                        <div class="quantity">
+                          <button class="quantity__button" type="button">-</button>
+                          <input class="quantity__input" type="text" readonly value="1">
+                          <button class="quantity__button" type="button">+</button>
+                        </div>
+                        <a class="js-add-cart catalog-item__buy-button button" href="#">В корзину</a>
+                      </div>
+                      <div class="catalog-item__sizes">
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="35-37">
+                          <span class="catalog-item__size-letter">s</span>
+                          <span class="catalog-item__size-decimals">35-37</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="38-42" checked>
+                          <span class="catalog-item__size-letter">m</span>
+                          <span class="catalog-item__size-decimals">38-42</span>
+                        </label>
+                        <label class="catalog-item__size">
+                          <input type="radio" name="size" value="43-46">
+                          <span class="catalog-item__size-letter">l</span>
+                          <span class="catalog-item__size-decimals">43-46</span>
+                        </label>
+                      </div>
+                      <div class="catalog-item__colors">
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="черный" checked>
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_black.jpg" alt="черный"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="синий">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_blue.jpg" alt="синий"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="белый">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_white.jpg" alt="белый"></span>
+                        </label>
+                        <label class="catalog-item__color">
+                          <input type="radio" name="color" value="красный">
+                          <span class="catalog-item__color-image"><img width="16" height="16" src="images/content/catalog-section/color_red.jpg" alt="красный"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <ul class="pager">
+              <li class="pager__item"><a class="pager__arrow" href="#"><svg><use xlink:href="#short_arrow_left"></use></svg> Назад</a></li>
+              <li class="pager__item"><a class="pager__page" href="#">1</a></li>
+              <li class="pager__item"><a class="pager__page" href="#">2</a></li>
+              <li class="pager__item"><span class="pager__page is-active">3</span></li>
+              <li class="pager__item"><a class="pager__page" href="#">4</a></li>
+              <li class="pager__item"><a class="pager__page" href="#">5</a></li>
+              <li class="pager__item"><a class="pager__arrow" href="#">Вперёд <svg><use xlink:href="#short_arrow_right"></use></svg></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section">
+        <div class="two-columns">
+          <div class="column column--70">
+            <h2>Сео текст для примера длинный заголовок в две строки</h2>
+            <p>Компания ООО «Белвентстрой» - это динамично развивающаяся инжиниринговая организация, созданная для обслуживания крупных корпоративных клиентов рынка климатического оборудования, систем вентиляции, отопления и кондиционирования, а также розничной продажи оборудования, материалов и комплектующих.Компания ООО «Белвентстрой» - это динамично развивающаяся инжиниринговая организация, созданная для обслуживания крупных корпоративных клиентов рынка климатического оборудования, систем вентиляции, отопления и кондиционирования, а также розничной продажи оборудования, материалов и комплектующих.Компания ООО «Белвентстрой» - это динамично развивающаяся инжиниринговая организация, созданная для обслуживания крупных корпоративных клиентов рынка климатического оборудования, систем вентиляции, отопления и кондиционирования, а также розничной продажи оборудования, материалов и комплектующих.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-section page-section--grey">
+        <h2>Акции и скидки</h2>
+        <ul class="actions-list">
+          <li class="actions-list__item">
+            <a class="action-item" href="action-detail.html">
+              <picture class="action-item__picture">
+                <source srcset="images/content/actions/img_1.jpg, images/content/actions/img_1@2x.jpg 2x" media="(min-width: 1024px)">
+                <img class="action-item__image" src="images/content/actions/img_1_mob.jpg" srcset="images/content/actions/img_1_mob@2x.jpg 2x" alt="alt">
+              </picture>
+              <span class="action-item__content">
+                <span class="action-item__title">FC BARCELONA X STANCE</span>
+              </span>
+            </a>
+          </li>
+          <li class="actions-list__item">
+            <a class="action-item" href="action-detail.html">
+              <picture class="action-item__picture">
+                <source srcset="images/content/actions/img_2.jpg, images/content/actions/img_2@2x.jpg 2x" media="(min-width: 1024px)">
+                <img class="action-item__image" src="images/content/actions/img_2_mob.jpg" srcset="images/content/actions/img_2_mob@2x.jpg 2x" alt="alt">
+              </picture>
+              <span class="action-item__content">
+                <span class="action-item__title">Новые поступления в апреле</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+        <p class="more-block"><a class="button" href="actions.html">Все акции и скидки</a></p>
+      </section>
+    </div>
+  </main>
+
+  //= template/footer.html
+
+  //= template/cart-add.html
+
+  //= template/scripts.html
+
+  <script src="js/catalog-list.js"></script>
+  <script src="js/catalog-section.js"></script>
+</body>
+
+</html>
