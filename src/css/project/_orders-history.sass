@@ -7,32 +7,44 @@
 
   &__title
     color: #555
+    font-size: 18px
     font-weight: 600
+    line-height: 24px
     margin-bottom: 24px
     text-align: center
 
     @media(min-width: 768px)
+      align-items: center
       border-bottom: 1px solid #F0F0F0
+      display: flex
+      flex-wrap: wrap
       margin-bottom: 32px
       padding-bottom: 16px
       text-align: left
 
     @media(min-width: 1900px)
+      font-size: 20px
+
+    @media(min-width: 1900px)
       margin-bottom: 56px
 
+    a
+      color: #555
+
+      &:hover,
+      &:focus
+        color: $color_blue
+
+      &:active
+        color: $color_red
+
   &__title-order
-    display: block
-    font-size: 18px
-    line-height: 1.33333
+    display: inline-flex
     margin-bottom: 16px
 
     @media(min-width: 768px)
-      display: initial
-      margin-right: 32px
+      margin-right: 24px
       margin-bottom: 0
-
-    @media(min-width: 1900px)
-      font-size: 20px
 
     &::before
       background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 4.89389e-05C18.6274 4.89389e-05 24 5.37263 24 12C24 18.6274 18.6274 23.9999 12 23.9999C5.37264 23.9999 4.97744e-05 18.6274 4.97744e-05 12C-0.018808 5.39142 5.32317 0.0189067 11.9317 4.89389e-05C11.9545 -1.6313e-05 11.9772 -1.6313e-05 12 4.89389e-05Z' fill='%23497CFF'/%3E%3Cpath d='M12 4.89389e-05C18.6274 4.89389e-05 24 5.37263 24 12C24 18.6274 18.6274 23.9999 12 23.9999C5.37264 23.9999 4.97744e-05 18.6274 4.97744e-05 12C-0.018808 5.39142 5.32317 0.0189067 11.9317 4.89389e-05C11.9545 -1.6313e-05 11.9772 -1.6313e-05 12 4.89389e-05Z' fill='%230253BC'/%3E%3Cpath d='M12 4.89389e-05C18.6274 4.89389e-05 24 5.37263 24 12C24 18.6274 18.6274 23.9999 12 23.9999C5.37264 23.9999 4.97744e-05 18.6274 4.97744e-05 12C-0.018808 5.39142 5.32317 0.0189067 11.9317 4.89389e-05C11.9545 -1.6313e-05 11.9772 -1.6313e-05 12 4.89389e-05Z' fill='%233081EB'/%3E%3Cpath d='M18.647 8.69253L10.1243 17.2152L5.35156 12.4766L7.29477 10.5676L10.1243 13.363L16.7038 6.78345L18.647 8.69253Z' fill='white'/%3E%3C/svg%3E%0A")
@@ -40,16 +52,31 @@
       display: inline-block
       height: 24px
       margin-right: 12px
-      position: relative
-      top: -2px
       vertical-align: middle
       width: 24px
 
   &__title-qnt
-    font-size: 16px
+    display: inline-block
+    margin-bottom: 16px
+    margin-right: 12px
 
-    @media(min-width: 1900px)
-      font-size: 20px
+    @media(min-width: 768px)
+      margin-right: 24px
+      margin-bottom: 0
 
   &__title-price
     color: $color_blue
+
+  &__status
+    background-color: $color_blue
+    border-radius: 16px
+    color: #fff
+    display: inline-block
+    font-size: 12px
+    font-weight: 500
+    line-height: 24px
+    padding: 4px 16px 5px
+    vertical-align: middle
+
+    &--cancel
+      background-color: $color_red

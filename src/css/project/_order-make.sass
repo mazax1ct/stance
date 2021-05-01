@@ -1,0 +1,137 @@
+.order-make
+  @media(min-width: 768px)
+    display: flex
+    margin-left: -16px
+    margin-right: -16px
+
+  &__left
+    margin-bottom: 56px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-left: 16px
+      padding-right: 16px
+      width: 50%
+
+    @media(min-width: 1200px)
+      width: 66.66666%
+
+    .button
+      border-radius: 0
+
+  &__section
+    &:not(:last-child)
+      margin-bottom: 56px
+
+  &__title
+    align-items: center
+    display: flex
+    font-size: 18px
+    font-weight: 600
+    line-height: 1.33333
+    margin-bottom: 24px
+
+    @media(min-width: 1900px)
+      font-size: 28px
+      line-height: 1.42857
+      margin-bottom: 32px
+
+    img
+      margin-right: 6px
+      width: 20px
+
+      @media(min-width: 1900px)
+        width: 27px
+
+  &__note
+    font-size: 12px
+    line-height: 1.42857
+    margin-top: -8px
+
+    @media(min-width: 1024px)
+      font-size: 14px
+
+  &__form-block
+    max-width: 448px
+
+  &__row
+    @media(min-width: 1200px)
+      display: flex
+      margin-left: -16px
+      margin-right: -16px
+
+  &__row-cell
+    @media(min-width: 1200px)
+      padding-left: 16px
+      padding-right: 16px
+      width: 50%
+
+  &__right
+    @media(min-width: 768px)
+      padding-left: 16px
+      padding-right: 16px
+      width: 50%
+
+    @media(min-width: 1200px)
+      width: 33.33333%
+
+  &__result-block
+    @media(min-width: 1024px)
+      border: 1px solid $grey_color
+      padding: 32px 24px 24px
+
+    @media(min-width: 1900px)
+      font-size: 16px
+
+    .button
+      border-radius: 0
+      width: 100%
+
+  &__coupon-block
+    border-bottom: 1px solid $grey_color
+    margin-bottom: 16px
+    padding-bottom: 24px
+
+  &__coupon-title
+    font-weight: 600
+    margin-bottom: 12px
+
+    @media(min-width: 768px) and (max-width: 1199px)
+      margin-bottom: 20px
+
+  &__coupon-form
+    display: flex
+
+    .input
+      font-size: 14px
+      height: 40px
+      line-height: 24px
+      padding: 8px 16px
+
+    .button
+      border-radius: 0
+      font-size: 14px
+      height: 40px
+      width: 140px
+
+  &__details
+    border-bottom: 1px solid $grey_color
+    margin-bottom: 16px
+    padding-bottom: 24px
+
+  &__detail,
+  &__cost
+    align-items: center
+    display: flex
+    justify-content: space-between
+
+  &__detail
+    b
+      font-size: 18px
+
+    &:not(:last-child)
+      margin-bottom: 8px
+
+  &__cost
+    b
+      font-size: 24px
