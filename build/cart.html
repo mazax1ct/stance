@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-  <title>STANCE - Оформление заказа</title>
+  <title>STANCE - Корзина</title>
 
   <meta name="description" content="">
 
@@ -188,106 +188,108 @@
     <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
-        <li class="breadcrumbs__item">Оформление заказа</li>
+        <li class="breadcrumbs__item">Корзина</li>
       </ul>
 
       <section class="page-section">
-        <h1>Оформление заказа</h1>
+        <h1>Корзина</h1>
         <form action="">
-          <div class="order-make">
-            <div class="order-make__left">
-              <div class="order-make__section">
-                <p class="order-make__title"><img src="images/icons/order-make/address.svg" alt=""> Адрес доставки</p>
-                <div class="order-make__form-block">
-                  <label class="js-input-label input-label input-label--with_float_label">
-                    <input class="input" type="text" value=""/>
-                    <span class="input-label__text">Город *</span>
-                  </label>
-                  <label class="js-input-label input-label input-label--with_float_label">
-                    <input class="input" type="text" value=""/>
-                    <span class="input-label__text">Индекс</span>
-                  </label>
-                  <p class="order-make__note">Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"</p>
+          <div class="cart">
+            <div class="cart__top">
+              <div class="cart__coupon">
+                <p class="cart__coupon-title">Введите код купона для скидки:</p>
+                <div class="cart__coupon-form">
+                  <input class="input" type="text" placeholder="">
+                  <button class="cart__coupon-apply" type="button" title="Применить"></button>
                 </div>
               </div>
-
-              <div class="order-make__section">
-                <p class="order-make__title"><img src="images/icons/order-make/delivery.svg" alt=""> Способ доставки</p>
-                тут будет всякая херня
+              <div class="cart__result-block">
+                <p class="cart__result"><span>Итого:</span> <span class="cart__result-cost">56 000 000 руб</span></p>
+                <p>Общий вес: 0.45 кг</p>
+                <p>Сумма НДС: 0 руб</p>
               </div>
-
-              <div class="order-make__section">
-                <p class="order-make__title"><img src="images/icons/order-make/payment.svg" alt=""> Способ оплаты</p>
-                <div class="order-make__form-block">
-                  <label class="radio-label">
-                    <input id="radio1" type="radio" name="radio" value="1" checked/>
-                    <span class="radio-icon"></span>
-                    <span class="radio-text"><b>Онлайн оплата</b></span>
-                  </label>
-                  <p class="order-make__note">Оплата возможна платежными системами: Visa, Mastercard, Maestro, МИР. Сервис предоставляется ПАО “Сбербанк”</p>
-                  <label class="radio-label">
-                    <input id="radio1" type="radio" name="radio" value="2"/>
-                    <span class="radio-icon"></span>
-                    <span class="radio-text"><b>Оплата при получении</b></span>
-                  </label>
-                  <p class="order-make__note">Оплата возможна наличными и банковскими картами</p>
-                </div>
-              </div>
-
-              <div class="order-make__section">
-                <p class="order-make__title"><img src="images/icons/order-make/personal.svg" alt=""> Ваши данные</p>
-                <div class="order-make__row">
-                  <div class="order-make__row-cell">
-                    <label class="js-input-label input-label input-label--with_float_label">
-                      <input class="input" type="text" value=""/>
-                      <span class="input-label__text">Имя</span>
-                    </label>
-                    <label class="js-input-label input-label input-label--with_float_label">
-                      <input class="input" type="text" value=""/>
-                      <span class="input-label__text">Фамилия</span>
-                    </label>
-                  </div>
-                  <div class="order-make__row-cell">
-                    <label class="js-input-label input-label input-label--with_float_label">
-                      <input class="js-phone-mask input" type="text" value=""/>
-                      <span class="input-label__text">Контактный телефон</span>
-                    </label>
-                    <label class="js-input-label input-label input-label--with_float_label">
-                      <input class="input" type="text" value=""/>
-                      <span class="input-label__text">Электронная почта</span>
-                    </label>
+              <button class="button button--big" type="button">Оформить заказ</button>
+            </div>
+            <div class="cart__titles">
+              <p class="cart__title">Наименование</p>
+              <p class="cart__title">Цена</p>
+              <p class="cart__title">Количество</p>
+              <p class="cart__title">Стоимость</p>
+            </div>
+            <div class="cart__list">
+              <div class="cart-item">
+                <div class="cart-item__info-block">
+                  <div class="cart-item__image"><img src="images/content/cart/img_1.jpg" alt="alt"></div>
+                  <div class="cart-item__info">
+                    <p class="cart-item__title">STASH WALL для макета в 2 строки</p>
+                    <p class="cart-item__prop">Носки мужские</p>
+                    <p class="cart-item__prop">Цвет: черный <span class="cart-item__color"><img src="images/content/catalog-section/color_black.jpg" alt="черный"></span></p>
+                    <p class="cart-item__prop">Размер: S(35-37)</p>
                   </div>
                 </div>
-                <div class="order-make__row">
-                  <div class="order-make__row-cell">
-                    <label class="input-label">
-                      <textarea class="textarea" placeholder="Ваш комментарий к заказу"></textarea>
-                    </label>
+                <div class="cart-item__price"><span>Цена:</span> 12 000 ₽</div>
+                <div class="cart-item__qnt">
+                  <div class="quantity">
+                    <button class="quantity__button" type="button">-</button>
+                    <input class="quantity__input" type="text" readonly="" value="1">
+                    <button class="quantity__button" type="button">+</button>
                   </div>
-                  <div class="order-make__row-cell">
-                    <button class="button button--big" type="button">Оформить заказ</button>
+                </div>
+                <div class="cart-item__cost"><span>Стоимость:</span> 1 200 000 ₽</div>
+                <div class="cart-item__delete-block">
+                  <button class="cart-item__delete-button" type="button">Удалить <svg><use xlink:href="#close"></use></svg></button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="cart-item__info-block">
+                  <div class="cart-item__image"><img src="images/content/cart/img_1.jpg" alt="alt"></div>
+                  <div class="cart-item__info">
+                    <p class="cart-item__title">STASH WALL для макета в 2 строки</p>
+                    <p class="cart-item__prop">Носки мужские</p>
+                    <p class="cart-item__prop">Цвет: черный <span class="cart-item__color"><img src="images/content/catalog-section/color_black.jpg" alt="черный"></span></p>
+                    <p class="cart-item__prop">Размер: S(35-37)</p>
                   </div>
+                </div>
+                <div class="cart-item__price"><span>Цена:</span> 12 000 ₽</div>
+                <div class="cart-item__qnt">
+                  <div class="quantity">
+                    <button class="quantity__button" type="button">-</button>
+                    <input class="quantity__input" type="text" readonly="" value="1">
+                    <button class="quantity__button" type="button">+</button>
+                  </div>
+                </div>
+                <div class="cart-item__cost"><span>Стоимость:</span> 1 200 000 ₽</div>
+                <div class="cart-item__delete-block">
+                  <button class="cart-item__delete-button" type="button">Удалить <svg><use xlink:href="#close"></use></svg></button>
+                </div>
+              </div>
+              <div class="cart-item">
+                <div class="cart-item__info-block">
+                  <div class="cart-item__image"><img src="images/content/cart/img_1.jpg" alt="alt"></div>
+                  <div class="cart-item__info">
+                    <p class="cart-item__title">STASH WALL для макета в 2 строки</p>
+                    <p class="cart-item__prop">Носки мужские</p>
+                    <p class="cart-item__prop">Цвет: черный <span class="cart-item__color"><img src="images/content/catalog-section/color_black.jpg" alt="черный"></span></p>
+                    <p class="cart-item__prop">Размер: S(35-37)</p>
+                  </div>
+                </div>
+                <div class="cart-item__price"><span>Цена:</span> 12 000 ₽</div>
+                <div class="cart-item__qnt">
+                  <div class="quantity">
+                    <button class="quantity__button" type="button">-</button>
+                    <input class="quantity__input" type="text" readonly="" value="1">
+                    <button class="quantity__button" type="button">+</button>
+                  </div>
+                </div>
+                <div class="cart-item__cost"><span>Стоимость:</span> 1 200 000 ₽</div>
+                <div class="cart-item__delete-block">
+                  <button class="cart-item__delete-button" type="button">Удалить <svg><use xlink:href="#close"></use></svg></button>
                 </div>
               </div>
             </div>
-            <div class="order-make__right">
-              <div class="order-make__result-block">
-                <div class="order-make__coupon-block">
-                  <p class="order-make__coupon-title">Есть промо-код?</p>
-                  <div class="order-make__coupon-form">
-                    <input class="input" type="text" placeholder="Введите промо-код">
-                    <button class="button" type="button">Применить</button>
-                  </div>
-                </div>
-                <div class="order-make__details">
-                  <p class="order-make__detail"><span>Количество товаров:</span> <b>3 шт.</b></p>
-                  <p class="order-make__detail"><span>Сумма товаров:</span> <b>1676 ₽</b></p>
-                  <p class="order-make__detail"><span>Размер скидки:</span> <b>676 ₽</b></p>
-                  <p class="order-make__detail"><span>Стоимость доставки:</span> <b>300 ₽</b></p>
-                </div>
-                <p class="order-make__cost"><span>Итого к оплате:</span> <b>1300 ₽</b></p>
-                <button class="button button--big" type="button">Оформить заказ</button>
-              </div>
+            <div class="cart__bottom">
+              <button class="cart__clear" type="button">Очистить корзину <svg><use xlink:href="#close"></use></svg></button>
+              <a class="cart__back" href="#"><span><svg><use xlink:href="#slider_prev"></use></svg></span> Вернуться к покупкам</a>
             </div>
           </div>
         </form>

@@ -1,0 +1,408 @@
+.cart
+  &__top
+    display: flex
+    flex-direction: column
+    margin-bottom: 56px
+
+    @media(min-width: 768px)
+      align-items: center
+      flex-direction: row
+
+    @media(min-width: 1024px)
+      border: 1px solid #f0f0f0
+      padding: 20px 24px 24px
+
+    @media(min-width: 1200px)
+      padding-left: 36px
+      padding-right: 36px
+
+    @media(min-width: 1900px)
+      margin-bottom: 88px
+
+    .button
+      border-radius: 0
+      min-width: 226px
+      margin-left: auto
+      margin-right: auto
+
+      @media(min-width: 768px)
+        margin-left: 0
+        margin-right: 0
+
+      @media(min-width: 768px) and (max-width: 1023px)
+        min-width: 180px
+
+  &__coupon
+    margin-bottom: 16px
+
+    @media(min-width: 768px)
+      margin-right: 24px
+      margin-bottom: 0
+      width: 290px
+
+      @media(min-width: 768px) and (max-width: 1023px)
+        width: 200px
+
+      @media(min-width: 1024px) and (max-width: 1199px)
+        margin-right: 48px
+        width: 270px
+
+  &__coupon-title
+    font-size: 16px
+    margin-bottom: 0
+
+    @media(min-width: 768px) and (max-width: 1023px)
+      font-size: 12px
+
+  &__coupon-form
+    position: relative
+
+    .input
+      background-color: $lightgrey_color
+      height: 40px
+      padding-right: 50px
+
+  &__coupon-apply
+    background-color: transparent
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='13' viewBox='0 0 14 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.5 2.5L4.5 4.09375L1.5 4.09375C0.65625 4.09375 -1.65284e-07 4.78125 -2.00799e-07 5.59375L-3.22371e-07 8.375C-3.57887e-07 9.1875 0.65625 9.875 1.5 9.875L4.5 9.875L4.5 11.4687C4.5 12.8125 6.09375 13.5 7.03125 12.5312L11.5312 8.03125C12.125 7.46875 12.125 6.5 11.5312 5.90625L7.03125 1.40625C6.09375 0.499999 4.5 1.15625 4.5 2.5ZM10.5 7L6 11.5L6 8.375L1.5 8.375L1.5 5.59375L6 5.59375L6 2.5L10.5 7ZM12.875 1C12.6562 1 12.5 1.15625 12.5 1.375L12.5 12.625C12.5 12.8125 12.6562 13 12.875 13L13.625 13C13.8125 13 14 12.8125 14 12.625L14 1.375C14 1.15625 13.8125 1 13.625 1L12.875 1Z' fill='%232E2E2E'/%3E%3C/svg%3E")
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    border: none
+    cursor: pointer
+    height: 40px
+    left: auto
+    position: absolute
+    right: 0
+    top: 0
+    width: 40px
+    z-index: 1
+
+  &__result-block
+    color: $darkgrey_color
+    font-size: 14px
+    line-height: 1.6
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      flex-grow: 1
+      max-width: 400px
+      margin-bottom: 0
+      margin-left: auto
+      margin-right: 24px
+
+    p
+      margin-bottom: 0
+
+  &__result
+    align-items: center
+    color: $text_color
+    display: flex
+    font-size: 16px
+    font-weight: 600
+    justify-content: space-between
+
+  &__result-cost
+    font-size: 18px
+
+    @media(min-width: 768px)
+      font-size: 20px
+      font-weight: 700
+      margin-bottom: -40px
+
+    @media(min-width: 1024px)
+      font-size: 24px
+      margin-bottom: -46px
+
+    @media(min-width: 1200px)
+      font-size: 28px
+
+  &__titles
+    display: none
+
+    @media(min-width: 768px)
+      align-items: center
+      display: flex
+      margin-bottom: 24px
+
+  &__title
+    font-size: 14px
+    font-weight: 600
+    line-height: 1.14285
+    margin-bottom: 0
+
+    &:first-child
+      width: 42.61363%
+
+      @media(min-width: 1024px)
+        padding-left: 16px
+
+    &:nth-child(2)
+      padding-left: 16px
+      width: 17.04545%
+
+      @media(min-width: 1024px)
+        width: 16.8%
+
+    &:nth-child(3)
+      width: 95px
+
+      @media(min-width: 1024px)
+        width: 16.1%
+
+    &:nth-child(4)
+      padding-left: 16px
+
+  &__bottom
+    align-items: center
+    display: flex
+    flex-direction: column
+    margin-top: 24px
+    text-align: center
+
+    @media(min-width: 768px)
+      align-items: center
+      border-top: 1px solid #f0f0f0
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      padding-top: 16px
+
+    &::after
+      border-top: 1px solid #f0f0f0
+      content: ''
+      display: block
+      margin-top: 16px
+      margin-bottom: 16px
+      order: 2
+      width: 100%
+
+      @media(min-width: 768px)
+        display: none
+
+  &__clear
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: inline-flex
+    font-size: 16px
+    font-weight: 600
+    order: 1
+    padding: 5px 0
+    transition: color 0.3s
+
+    &:hover,
+    &:focus
+      color: $color_blue
+
+      svg
+        fill: $color_blue
+
+    &:active
+      color: $color_red
+
+      svg
+        fill: $color_red
+
+    svg
+      fill: $text_color
+      height: 14px
+      margin-left: 8px
+      transition: fill 0.3s
+      width: 14px
+
+  &__back
+    align-items: center
+    cursor: pointer
+    display: inline-flex
+    font-size: 16px
+    font-weight: 600
+    padding: 5px 0
+    order: 3
+    text-decoration: none
+
+    span
+      align-items: center
+      background-color: $lightgrey_color
+      display: flex
+      height: 24px
+      justify-content: center
+      margin-right: 8px
+      min-width: 24px
+      width: 24px
+
+    svg
+      fill: $color_blue
+      height: 12px
+      width: 12px
+
+.cart-item
+  align-items: center
+  border-top: 1px solid #f0f0f0
+  border-bottom: 1px solid #f0f0f0
+  display: flex
+  flex-wrap: wrap
+  margin-left: -16px
+  margin-right: -16px
+  padding-top: 24px
+  padding-bottom: 14px
+  padding-left: 16px
+  padding-right: 16px
+
+  @media(min-width: 1024px)
+    align-items: flex-start
+    border: 1px solid #f0f0f0
+    margin-left: 0
+    margin-right: 0
+    padding: 16px
+
+  &:not(:last-child)
+    margin-bottom: 24px
+
+    @media(min-width: 1900px)
+      margin-bottom: 32px
+
+  &__info-block
+    display: flex
+    margin-bottom: 16px
+    order: 1
+    width: 100%
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      width: 42.61363%
+
+  &__image
+    min-width: 97px
+    width: 97px
+
+    @media(min-width: 1900px)
+      min-width: 224px
+      width: 224px
+
+  &__info
+    padding-left: 16px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+
+  &__title
+    font-size: 16px
+    line-height: 1.25
+    margin-bottom: 16px
+
+    @media(min-width: 768px)
+      font-size: 14px
+      font-weight: 600
+
+    @media(min-width: 1900px)
+      font-size: 24px
+      font-weight: 400
+
+  &__prop
+    font-size: 14px
+    line-height: 1.14285
+
+    &:not(:last-child)
+      margin-bottom: 8px
+
+  &__color
+    border: 1px solid $grey_color
+    display: inline-block
+    height: 16px
+    margin-left: 4px
+    padding: 2px
+    vertical-align: middle
+    width: 16px
+
+  &__qnt
+    margin-right: 20px
+    margin-bottom: 20px
+    order: 2
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      margin-right: 0
+      order: 3
+      width: 95px
+
+    @media(min-width: 1024px)
+      width: 17.04545%
+
+    @media(min-width: 1900px)
+      width: 16.5%
+
+  &__price,
+  &__cost
+    font-weight: 600
+
+    @media(min-width: 1024px)
+      font-size: 16px
+      line-height: 2.5
+
+    span
+      font-weight: 400
+
+      @media(min-width: 768px)
+        display: none
+
+  &__price
+    margin-bottom: 20px
+    order: 3
+    width: calc(100% - 115px)
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      order: 2
+      padding-left: 16px
+      width: 17.04545%
+
+  &__cost
+    order: 4
+
+    @media(min-width: 768px)
+      padding-left: 16px
+
+  &__delete-block
+    order: 5
+    margin-left: auto
+
+    @media(min-width: 1024px)
+      line-height: 40px
+
+    @media(min-width: 1200px)
+      padding-right: 16px
+
+  &__delete-button
+    align-items: center
+    background-color: transparent
+    border: none
+    cursor: pointer
+    display: inline-flex
+    font-size: 14px
+    padding: 5px 0
+    transition: color 0.3s
+    vertical-align: middle
+
+    @media(min-width: 1024px)
+      margin-top: -4px
+
+    &:hover,
+    &:focus
+      color: $color_blue
+
+      svg
+        fill: $color_blue
+
+    &:active
+      color: $color_red
+
+      svg
+        fill: $color_red
+
+    svg
+      fill: $text_color
+      height: 14px
+      margin-left: 10px
+      transition: fill 0.3s
+      width: 14px
