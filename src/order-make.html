@@ -37,11 +37,50 @@
 
       <section class="page-section">
         <h1>Оформление заказа</h1>
-        <form action="">
+        <form action="" method="post">
           <div class="order-make">
-            <div class="order-make__left">
+            <div class="js-content-with-sticky order-make__left">
               <div class="order-make__section">
-                <p class="order-make__title"><img src="images/icons/order-make/address.svg" alt=""> Адрес доставки</p>
+                <p class="order-make__title"><img src="images/icons/order-make/delivery.svg" alt=""> Способ доставки</p>
+                <div class="order-make__delivery">
+                  <div class="order-make__delivery-block">
+                    <label class="order-make__delivery-label">
+                      <input name="delivery" type="radio" value="1" checked>
+                      <span class="order-make__delivery-label-inner">
+                        <span class="order-make__delivery-title"><span class="order-make__delivery-icon"></span> Самовывоз</span>
+                        <span class="order-make__delivery-text">Вы можете самостоятельно забрать заказ из нашего магазина.</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="order-make__delivery-block">
+                    <label class="order-make__delivery-label">
+                      <input name="delivery" type="radio" value="2">
+                      <span class="order-make__delivery-label-inner">
+                        <span class="order-make__delivery-title"><span class="order-make__delivery-icon"></span> Доставка курьером</span>
+                        <span class="order-make__delivery-text">Доставка осуществляется в течение дня в удобное для вас время.</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-make__section">
+                <p class="order-make__title"><img src="images/icons/order-make/address.svg" alt=""> Доставка самовывозом</p>
+                <div class="order-make__row">
+                  <p class="order-make__row-cell">
+                    Адрес пункта выдачи заказов: <br>
+                    г. Санкт-Петербург, ул. Ленина дом 3 <br>
+                    Часы работы: 9:00-20:00<br>
+                    Тел.: +7(921)987-56-65
+                  </p>
+                  <div class="order-make__row-cell">
+                    <a href="#"><img src="images/content/img.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-make__section">
+                <p class="order-make__title"><img src="images/icons/order-make/address.svg" alt=""> Доставка курьером</p>
                 <div class="order-make__form-block">
                   <label class="js-input-label input-label input-label--with_float_label">
                     <input class="input" type="text" value=""/>
@@ -49,15 +88,16 @@
                   </label>
                   <label class="js-input-label input-label input-label--with_float_label">
                     <input class="input" type="text" value=""/>
-                    <span class="input-label__text">Индекс</span>
+                    <span class="input-label__text">Адрес доставки *</span>
                   </label>
-                  <p class="order-make__note">Выберите свой город в списке. Если вы не нашли свой город, выберите "другое местоположение", а город впишите в поле "Город"</p>
+                  <label class="js-input-label input-label input-label--with_float_label">
+                    <input class="input" type="text" value=""/>
+                    <span class="input-label__text">Время доставки</span>
+                  </label>
+                  <label class="input-label">
+                    <textarea class="textarea" placeholder="Ваш комментарий к заказу"></textarea>
+                  </label>
                 </div>
-              </div>
-
-              <div class="order-make__section">
-                <p class="order-make__title"><img src="images/icons/order-make/delivery.svg" alt=""> Способ доставки</p>
-                тут будет всякая херня
               </div>
 
               <div class="order-make__section">
@@ -102,35 +142,76 @@
                     </label>
                   </div>
                 </div>
-                <div class="order-make__row">
-                  <div class="order-make__row-cell">
-                    <label class="input-label">
-                      <textarea class="textarea" placeholder="Ваш комментарий к заказу"></textarea>
-                    </label>
+                <label class="input-label">
+                  <textarea class="textarea" placeholder="Ваш комментарий к заказу"></textarea>
+                </label>
+              </div>
+
+              <div class="order-make__section">
+                <p class="order-make__title">Товары в заказе</p>
+                <div class="order-purchase">
+                  <div class="order-purchase__info-block">
+                    <div class="order-purchase__image"><img src="images/content/cart/img_1.jpg" alt="alt"></div>
+                    <div class="order-purchase__info">
+                      <p class="order-purchase__title">STASH WALL для макета в 2 строки</p>
+                      <p class="order-purchase__prop">Носки мужские</p>
+                      <p class="order-purchase__prop">Цвет: черный <span class="order-purchase__color"><img src="images/content/catalog-section/color_black.jpg" alt="черный"></span></p>
+                      <p class="order-purchase__prop">Размер: S(35-37)</p>
+                    </div>
                   </div>
-                  <div class="order-make__row-cell">
-                    <button class="button button--big" type="button">Оформить заказ</button>
+                  <div class="order-purchase__price"><span>Цена:</span> 12 000 ₽</div>
+                  <div class="order-purchase__qnt">1000 шт</div>
+                  <div class="order-purchase__cost"><span>Стоимость:</span> 1 200 000 ₽</div>
+                </div>
+                <div class="order-purchase">
+                  <div class="order-purchase__info-block">
+                    <div class="order-purchase__image"><img src="images/content/cart/img_1.jpg" alt="alt"></div>
+                    <div class="order-purchase__info">
+                      <p class="order-purchase__title">STASH WALL для макета в 2 строки</p>
+                      <p class="order-purchase__prop">Носки мужские</p>
+                      <p class="order-purchase__prop">Цвет: черный <span class="order-purchase__color"><img src="images/content/catalog-section/color_black.jpg" alt="черный"></span></p>
+                      <p class="order-purchase__prop">Размер: S(35-37)</p>
+                    </div>
                   </div>
+                  <div class="order-purchase__price"><span>Цена:</span> 12 000 ₽</div>
+                  <div class="order-purchase__qnt">1000 шт</div>
+                  <div class="order-purchase__cost"><span>Стоимость:</span> 1 200 000 ₽</div>
+                </div>
+                <div class="order-purchase">
+                  <div class="order-purchase__info-block">
+                    <div class="order-purchase__image"><img src="images/content/cart/img_1.jpg" alt="alt"></div>
+                    <div class="order-purchase__info">
+                      <p class="order-purchase__title">STASH WALL для макета в 2 строки</p>
+                      <p class="order-purchase__prop">Носки мужские</p>
+                      <p class="order-purchase__prop">Цвет: черный <span class="order-purchase__color"><img src="images/content/catalog-section/color_black.jpg" alt="черный"></span></p>
+                      <p class="order-purchase__prop">Размер: S(35-37)</p>
+                    </div>
+                  </div>
+                  <div class="order-purchase__price"><span>Цена:</span> 12 000 ₽</div>
+                  <div class="order-purchase__qnt">1000 шт</div>
+                  <div class="order-purchase__cost"><span>Стоимость:</span> 1 200 000 ₽</div>
                 </div>
               </div>
             </div>
             <div class="order-make__right">
-              <div class="order-make__result-block">
-                <div class="order-make__coupon-block">
-                  <p class="order-make__coupon-title">Есть промо-код?</p>
-                  <div class="order-make__coupon-form">
-                    <input class="input" type="text" placeholder="Введите промо-код">
-                    <button class="button" type="button">Применить</button>
+              <div class="js-sticky-block">
+                <div class="order-make__result-block">
+                  <div class="order-make__coupon-block">
+                    <p class="order-make__coupon-title">Есть промо-код?</p>
+                    <div class="order-make__coupon-form">
+                      <input class="input" type="text" placeholder="Введите промо-код">
+                      <button class="button" type="button">Применить</button>
+                    </div>
                   </div>
+                  <div class="order-make__details">
+                    <p class="order-make__detail"><span>Количество товаров:</span> <b>3 шт.</b></p>
+                    <p class="order-make__detail"><span>Сумма товаров:</span> <b>1676 ₽</b></p>
+                    <p class="order-make__detail"><span>Размер скидки:</span> <b>676 ₽</b></p>
+                    <p class="order-make__detail"><span>Стоимость доставки:</span> <b>300 ₽</b></p>
+                  </div>
+                  <p class="order-make__cost"><span>Итого к оплате:</span> <b>1300 ₽</b></p>
+                  <button class="button button--big" type="button">Оформить заказ</button>
                 </div>
-                <div class="order-make__details">
-                  <p class="order-make__detail"><span>Количество товаров:</span> <b>3 шт.</b></p>
-                  <p class="order-make__detail"><span>Сумма товаров:</span> <b>1676 ₽</b></p>
-                  <p class="order-make__detail"><span>Размер скидки:</span> <b>676 ₽</b></p>
-                  <p class="order-make__detail"><span>Стоимость доставки:</span> <b>300 ₽</b></p>
-                </div>
-                <p class="order-make__cost"><span>Итого к оплате:</span> <b>1300 ₽</b></p>
-                <button class="button button--big" type="button">Оформить заказ</button>
               </div>
             </div>
           </div>
@@ -144,9 +225,8 @@
   //= template/cart-add.html
 
   //= template/scripts.html
-
-  <script src="js/catalog-list.js"></script>
-  <script src="js/catalog-section.js"></script>
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/order-make.js"></script>
 </body>
 
 </html>
