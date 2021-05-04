@@ -57,20 +57,20 @@
     @media(min-width: 1024px)
       font-size: 14px
 
-  &__delivery
+  &__radios
     display: flex
     flex-wrap: wrap
     margin-left: -10px
     margin-right: -10px
 
-  &__delivery-block
+  &__radios-block
     display: flex
     flex-direction: column
     padding-left: 10px
     padding-right: 10px
     width: 50%
 
-  &__delivery-label
+  &__radios-label
     display: block
     height: 100%
     position: relative
@@ -82,11 +82,11 @@
       clip: rect(0 0 0 0)
       width: 1px
 
-      &:checked + .order-make__delivery-label-inner
+      &:checked + .order-make__radios-label-inner
         border-color: $text_color
 
-        .order-make__delivery-title
-          .order-make__delivery-icon
+        .order-make__radios-title
+          .order-make__radios-icon
             &::before
               background-color: $color_blue
               border-radius: 50%
@@ -98,7 +98,7 @@
               transform: translate(-50%, -50%)
               width: 10px
 
-  &__delivery-label-inner
+  &__radios-label-inner
     background-color: $lightgrey_color
     border: 1px solid $grey_color
     cursor: pointer
@@ -109,14 +109,14 @@
     transition: border-color 0.3s
     padding: 16px
 
-  &__delivery-title
+  &__radios-title
     display: block
     font-weight: 600
     margin-bottom: 8px
     position: relative
     padding-left: 24px
 
-  &__delivery-icon
+  &__radios-icon
     border: 1px solid $grey_color
     background-color: #fff
     border-radius: 50%
@@ -129,7 +129,7 @@
     transition: border-color 0.3s
     width: 16px
 
-  &__delivery-text
+  &__radios-text
     display: block
     font-size: 12px
     padding-left: 24px
@@ -209,6 +209,8 @@
     justify-content: space-between
 
   &__detail
+    line-height: 1.2
+
     b
       font-size: 18px
 
@@ -233,10 +235,14 @@
   padding-left: 16px
   padding-right: 16px
 
+  @media(min-width: 768px)
+    align-items: flex-start
+    justify-content: space-between
+
   @media(min-width: 1024px)
     align-items: flex-start
     border: 1px solid #f0f0f0
-    justify-content: space-between
+
     margin-left: 0
     margin-right: 0
     padding: 16px
@@ -253,7 +259,11 @@
     order: 1
     width: 100%
 
-    @media(min-width: 768px)
+    @media(min-width: 768px) and (max-width: 1023px)
+      margin-bottom: 0
+      width: 42.61363%
+
+    @media(min-width: 1200px)
       margin-bottom: 0
       width: 42.61363%
 
@@ -306,6 +316,7 @@
   &__cost
     font-weight: 600
     line-height: 1.25
+    white-space: nowrap
 
     span
       font-weight: 400
