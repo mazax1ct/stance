@@ -1,0 +1,264 @@
+.catalog-detail
+  position: relative
+
+  &__left,
+  &__description
+    @media(min-width: 1024px)
+      width: 65.81196%
+
+  &__left
+    margin-bottom: 48px
+
+    @media(min-width: 1900px)
+      margin-bottom: 56px
+
+  &__right
+    margin-bottom: 56px
+
+    @media(min-width: 1024px)
+      left: auto
+      margin-bottom: 0
+      position: absolute
+      right: 0
+      padding-left: 32px
+      top: 0
+      width: 34.18804%
+      z-index: 1
+
+    h1
+      font-size: 24px
+      line-height: 1.33333
+
+      &:not(:last-child)
+        margin-bottom: 0
+
+  &__category
+    margin-bottom: 16px
+
+  &__price
+    font-size: 24px
+    font-weight: 600
+    line-height: 1
+    margin-bottom: 32px
+
+  &__subtitle
+    font-size: 16px
+    line-height: 1
+    margin-bottom: 16px
+
+  &__sizes
+    display: flex
+    flex-wrap: wrap
+    margin-left: -8px
+    margin-right: -8px
+    margin-bottom: 16px
+
+  &__size
+    display: block
+    margin-bottom: 8px
+    padding-left: 8px
+    padding-right: 8px
+    text-align: center
+
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + .catalog-detail__size-letter
+        border-color: $color_blue
+
+      &:disabled + .catalog-detail__size-letter,
+      &:disabled ~ .catalog-detail__size-decimals,
+        color: $grey_color
+        cursor: default
+
+  &__size-letter
+    border: 1px solid $lightgrey_color
+    cursor: pointer
+    display: block
+    font-size: 14px
+    font-weight: 500
+    line-height: 16px
+    margin-bottom: 8px
+    padding: 8px 4px
+    text-transform: uppercase
+    width: 40px
+
+  &__size-decimals
+    cursor: pointer
+    display: block
+    font-size: 10px
+    font-weight: 500
+    line-height: 16px
+
+  &__colors
+    display: flex
+    flex-wrap: wrap
+    margin-left: -8px
+    margin-right: -8px
+    margin-bottom: 16px
+
+  &__color
+    display: block
+    margin-bottom: 8px
+    padding-left: 8px
+    padding-right: 8px
+
+    input[type="radio"]
+      position: absolute
+      height: 1px
+      overflow: hidden
+      clip: rect(0 0 0 0)
+      width: 1px
+
+      &:checked + .catalog-detail__color-image
+        border-color: $color_blue
+
+  &__color-image
+    border: 1px solid $lightgrey_color
+    cursor: pointer
+    display: block
+    height: 40px
+    padding: 4px
+    width: 40px
+
+    img
+      display: block
+      width: 100%
+
+  &__sizes-table-link
+    font-size: 12px
+    margin-bottom: 32px
+
+    a
+      color: $color_blue
+
+      &:hover,
+      &:focus
+        color: $color_red
+
+  &__buttons-block
+    display: flex
+
+    .button
+      border-radius: 0
+      margin-right: 16px
+
+  &__fav
+    align-items: center
+    border: none
+    cursor: pointer
+    display: flex
+    height: 40px
+    justify-content: center
+    padding: 0
+    width: 40px
+
+    svg
+      fill: $text_color
+      height: 16px
+      width: 16px
+
+  &__tabs-nav
+    border-bottom: 1px solid #F0F0F0
+    display: none
+    padding-bottom: 32px
+
+    @media(min-width: 1024px)
+      display: flex
+
+  &__tabs-nav-item
+    &:not(:last-child)
+      margin-right: 32px
+
+      @media(min-width: 1350px)
+        margin-right: 48px
+
+      @media(min-width: 1900px)
+        margin-right: 56px
+
+  &__tabs-nav-link
+    border-bottom: 2px solid transparent
+    color: $darkgrey_color
+    display: inline-block
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.77777
+    transition: color 0.3s, border-color 0.3s
+    text-decoration: none
+
+    @media(min-width: 1900px)
+      font-size: 18px
+
+    &.is-active
+      color: $text_color
+      border-bottom-color: $color_blue
+
+    &:hover,
+    &:focus
+      color: $text_color
+
+  &__tab
+    border-top: 1px solid #F0F0F0
+    margin-left: -16px
+    margin-right: -16px
+    padding-left: 16px
+    padding-right: 16px
+
+    @media(min-width: 1024px)
+      border-top: none
+      display: none
+      margin-left: 0
+      margin-right: 0
+      padding-left: 0
+      padding-right: 0
+
+    &.is-active
+      @media(min-width: 1024px)
+        display: block
+
+  &__tab-title
+    color: $darkgrey_color
+    cursor: pointer
+    font-size: 16px
+    font-weight: 500
+    margin-bottom: 0
+    padding-top: 4px
+    padding-bottom: 4px
+    position: relative
+
+    @media(min-width: 1024px)
+      display: none
+
+    &.is-active
+      color: $text_color
+
+      &::after
+        transform: translateY(-50%) rotate(-180deg)
+
+    &::after
+      background-image: url("data:image/svg+xml,%3Csvg width='8' height='4' viewBox='0 0 8 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.519052 1.4556e-07L7.18135 1.05169e-08C7.64267 1.16602e-09 7.87369 0.510917 7.5475 0.809717L4.21635 3.86108C4.01414 4.04631 3.68626 4.04631 3.48405 3.86108L0.152906 0.809717C-0.173317 0.510917 0.0577316 1.54911e-07 0.519052 1.4556e-07Z' fill='%23497CFF'/%3E%3Cpath d='M0.519052 1.4556e-07L7.18135 1.05169e-08C7.64267 1.16602e-09 7.87369 0.510917 7.5475 0.809717L4.21635 3.86108C4.01414 4.04631 3.68626 4.04631 3.48405 3.86108L0.152906 0.809717C-0.173317 0.510917 0.0577316 1.54911e-07 0.519052 1.4556e-07Z' fill='%230253BC'/%3E%3Cpath d='M0.519052 1.4556e-07L7.18135 1.05169e-08C7.64267 1.16602e-09 7.87369 0.510917 7.5475 0.809717L4.21635 3.86108C4.01414 4.04631 3.68626 4.04631 3.48405 3.86108L0.152906 0.809717C-0.173317 0.510917 0.0577316 1.54911e-07 0.519052 1.4556e-07Z' fill='%233081EB'/%3E%3C/svg%3E%0A")
+      content: ''
+      height: 4px
+      left: auto
+      position: absolute
+      right: 16px
+      top: 50%
+      transform: translateY(-50%)
+      width: 8px
+
+  &__tab-inner
+    display: none
+    padding-top: 8px
+    padding-bottom: 24px
+
+    @media(min-width: 1024px)
+      display: block !important
+      padding-top: 0
+      padding-bottom: 0
+
+    &.is-active
+      display: block
