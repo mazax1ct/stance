@@ -1,0 +1,19 @@
+.popup
+  display: none
+  max-width: 1048px
+  width: 100%
+
+  &.fancybox-content
+    background-color: $lightgrey_color
+    padding: 40px 24px
+
+    .fancybox-button
+      svg
+        path
+          fill: $darkgrey_color
+          transition: fill 0.3s
+
+      &:hover
+        svg
+          path
+            fill: $text_color
