@@ -17,3 +17,48 @@
         svg
           path
             fill: $text_color
+
+.about-sizes
+  @media(min-width: 768px)
+    display: flex
+
+  &__left
+    margin-bottom: 24px
+
+    @media(min-width: 768px)
+      margin-bottom: 0
+      padding-right: 12px
+      width: 70%
+
+    @media(min-width: 1200px)
+      padding-right: 16px
+
+  &__right
+    @media(min-width: 768px)
+      padding-left: 12px
+      width: 30%
+
+    @media(min-width: 1200px)
+      padding-left: 16px
+
+    @media(min-width: 1900px)
+      font-size: 16px
+
+.size-table
+  line-height: 1.33333
+
+  th
+    background-color: #fff
+
+  th,
+  td
+    padding: 12px
+
+    @media(min-width: 1200px)
+      padding-left: 24px
+      padding-right: 24px
+
+  tr
+    &:not(:last-child)
+      td
+        border-bottom: 1px solid #fff
